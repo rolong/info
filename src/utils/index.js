@@ -301,10 +301,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `https://crascan.io/tx/${tx}/`,
-  showAddress: (address) => `https://www.crascan.io/address/${address}/`,
-  showToken: (address) => `https://www.crascan.io/token/${address}/`,
-  showBlock: (block) => `https://crascan.io/block/${block}/`,
+  showTransaction: (tx) => `https://crascan.com/tx/${tx}/`,
+  showAddress: (address) => `https://www.crascan.com/address/${address}/`,
+  showToken: (address) => `https://www.crascan.com/token/${address}/`,
+  showBlock: (block) => `https://crascan.com/block/${block}/`,
 }
 
 export const formatTime = (unix) => {
