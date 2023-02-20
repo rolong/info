@@ -4,7 +4,7 @@ import { HttpLink } from 'apollo-link-http'
 
 export const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'http://47.242.224.2:8000/subgraphs/name/davekaj/uniswap',
+    uri: 'https://info.crascan.com/subgraphs/name/davekaj/uniswap',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -36,7 +36,7 @@ export const stakingClient = new ApolloClient({
 
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'http://47.242.224.2:8000/subgraphs/name/blocklytics/ethereum-blocks',
+    uri: 'https://info.crascan.com/subgraphs/name/blocklytics/ethereum-blocks',
   }),
   cache: new InMemoryCache(),
 })

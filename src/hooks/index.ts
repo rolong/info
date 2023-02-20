@@ -8,9 +8,25 @@ import copy from 'copy-to-clipboard'
 export function useColor(tokenAddress, token) {
   const [color, setColor] = useState('#2172E5')
   if (tokenAddress) {
-    const path = `https://faucet.crascan.com/images/tokens/${isAddress(
-      tokenAddress
-    )}.png`
+
+    // const path = `https://faucet.crascan.com/images/tokens/${isAddress(
+    //   tokenAddress
+    // )}.png`
+    let path = ''
+    switch (tokenAddress) {
+      case '0xbcacc022eaf3f3fd1649d96ddd59a17a0ee068bc':
+        path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/USDT.png';
+        break;
+      case '0x625655dd34f87412430aa44fa48aeeed6ea5ba4b':
+        path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/PECO.png';
+        break;
+      case '0xe922f4627773683bbe4bce5575a381fb4585b1c1':
+        path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/CRA.png';
+        break;
+      default:
+        path = '';
+    }
+
     if (path) {
       Vibrant.from(path).getPalette((err, palette) => {
         if (palette && palette.Vibrant) {

@@ -56,7 +56,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0xdf711f2da48c667739fb3495d02084ea92842ef0') {
+  if (address?.toLowerCase() === '0xe922f4627773683bbe4bce5575a381fb4585b1c1') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -71,9 +71,25 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     )
   }
 
-  const path = `https://faucet.crascan.com/images/tokens/${isAddress(
-    address
-  )}.png`
+  let path = ''
+
+  switch (address) {
+    case '0xbcacc022eaf3f3fd1649d96ddd59a17a0ee068bc':
+      path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/USDT.png';
+      break;
+    case '0x625655dd34f87412430aa44fa48aeeed6ea5ba4b':
+      path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/PECO.png';
+      break;
+    case '0xe922f4627773683bbe4bce5575a381fb4585b1c1':
+      path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/CRA.png';
+      break;
+    default:
+      path = '';
+  }
+
+  // const path = `https://faucet.crascan.com/images/tokens/${isAddress(
+  //   address
+  // )}.png`
 
   return (
     <Inline>
