@@ -40,13 +40,13 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://app.uniswap.org/#/` +
+      `https://swap.crascan.com/#/` +
       (remove ? `remove` : `add`) +
       `/v2/${token0Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token0Address}/${'CRA'}`
     )
   } else {
     return (
-      `https://app.uniswap.org/#/` +
+      `https://swap.crascan.com/#/` +
       (remove ? `remove` : `add`) +
       `/v2/${token0Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token0Address}/${token1Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token1Address
       }`
@@ -56,19 +56,19 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://app.uniswap.org/#/swap?inputCurrency=${token0Address}`
+    return `https://swap.crascan.com/#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://app.uniswap.org/#/swap?inputCurrency=${token0Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token0Address
+    return `https://swap.crascan.com/#/swap?inputCurrency=${token0Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token0Address
       }&outputCurrency=${token1Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token1Address}`
   }
 }
 
 export function getMiningPoolLink(token0Address) {
-  return `https://app.uniswap.org/#/uni/ETH/${token0Address}`
+  return `https://swap.crascan.com/#/uni/ETH/${token0Address}`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://app.uniswap.org/#/uni'
+  let baseUniswapUrl = 'https://swap.crascan.com/#/uni'
   if (!linkVariable) {
     return baseUniswapUrl
   }

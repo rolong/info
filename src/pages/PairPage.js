@@ -499,7 +499,7 @@ function PairPage({ pairAddress, history }) {
                   </Column>
                   <ButtonLight color={backgroundColor}>
                     <Link color={backgroundColor} external href={'https://crascan.com/address/' + pairAddress}>
-                      View on Etherscan ↗
+                      View on Crascan ↗
                     </Link>
                   </ButtonLight>
                 </TokenDetailsLayout>
