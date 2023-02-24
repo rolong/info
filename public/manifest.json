@@ -1,6 +1,6 @@
 {
-  "short_name": "CRASwap Info",
-  "name": "View statistics for CRASwap exchanges.",
+  "short_name": "OPC Swap Info",
+  "name": "View statistics for OPC Swap exchanges.",
   "icons": [
     {
       "src": "favicon.ico",
