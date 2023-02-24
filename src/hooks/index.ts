@@ -9,7 +9,7 @@ export function useColor(tokenAddress, token) {
   const [color, setColor] = useState('#2172E5')
   if (tokenAddress) {
 
-    // const path = `https://faucet.crascan.com/images/tokens/${isAddress(
+    // const path = `https://faucet.oceanpchain.com/images/tokens/${isAddress(
     //   tokenAddress
     // )}.png`
     let path = ''
@@ -20,8 +20,8 @@ export function useColor(tokenAddress, token) {
       case '0x625655dd34f87412430aa44fa48aeeed6ea5ba4b':
         path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/PECO.png';
         break;
-      case '0xe922f4627773683bbe4bce5575a381fb4585b1c1':
-        path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/CRA.png';
+      case '0x4cf598849031433f5c27ecd9b5e152d700dcdd8e':
+        path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/OPC.png';
         break;
       default:
         path = '';

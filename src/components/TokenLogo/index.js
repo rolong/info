@@ -56,7 +56,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0xe922f4627773683bbe4bce5575a381fb4585b1c1') {
+  if (address?.toLowerCase() === '0x4cf598849031433f5c27ecd9b5e152d700dcdd8e') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -80,14 +80,14 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     case '0x625655dd34f87412430aa44fa48aeeed6ea5ba4b':
       path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/PECO.png';
       break;
-    case '0xe922f4627773683bbe4bce5575a381fb4585b1c1':
-      path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/CRA.png';
+    case '0x4cf598849031433f5c27ecd9b5e152d700dcdd8e':
+      path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/OPC.png';
       break;
     default:
       path = '';
   }
 
-  // const path = `https://faucet.crascan.com/images/tokens/${isAddress(
+  // const path = `https://faucet.oceanpchain.com/images/tokens/${isAddress(
   //   address
   // )}.png`
 

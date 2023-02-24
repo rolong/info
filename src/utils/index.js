@@ -40,15 +40,15 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://swap.crascan.com/#/` +
+      `https://swap.oceanpchain.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token0Address}/${'CRA'}`
+      `/v2/${token0Address === '0x4cf598849031433f5c27ecd9b5e152d700dcdd8e' ? 'OPC' : token0Address}/${'OPC'}`
     )
   } else {
     return (
-      `https://swap.crascan.com/#/` +
+      `https://swap.oceanpchain.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token0Address}/${token1Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token1Address
+      `/v2/${token0Address === '0x4cf598849031433f5c27ecd9b5e152d700dcdd8e' ? 'OPC' : token0Address}/${token1Address === '0x4cf598849031433f5c27ecd9b5e152d700dcdd8e' ? 'OPC' : token1Address
       }`
     )
   }
@@ -56,19 +56,19 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://swap.crascan.com/#/swap?inputCurrency=${token0Address}`
+    return `https://swap.oceanpchain.com/#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap.crascan.com/#/swap?inputCurrency=${token0Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token0Address
-      }&outputCurrency=${token1Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token1Address}`
+    return `https://swap.oceanpchain.com/#/swap?inputCurrency=${token0Address === '0x4cf598849031433f5c27ecd9b5e152d700dcdd8e' ? 'OPC' : token0Address
+      }&outputCurrency=${token1Address === '0x4cf598849031433f5c27ecd9b5e152d700dcdd8e' ? 'OPC' : token1Address}`
   }
 }
 
 export function getMiningPoolLink(token0Address) {
-  return `https://swap.crascan.com/#/uni/ETH/${token0Address}`
+  return `https://swap.oceanpchain.com/#/uni/ETH/${token0Address}`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://swap.crascan.com/#/uni'
+  let baseUniswapUrl = 'https://swap.oceanpchain.com/#/uni'
   if (!linkVariable) {
     return baseUniswapUrl
   }
@@ -301,10 +301,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `https://crascan.com/tx/${tx}/`,
-  showAddress: (address) => `https://www.crascan.com/address/${address}/`,
-  showToken: (address) => `https://www.crascan.com/token/${address}/`,
-  showBlock: (block) => `https://crascan.com/block/${block}/`,
+  showTransaction: (tx) => `https://oceanpchain.com/tx/${tx}/`,
+  showAddress: (address) => `https://www.oceanpchain.com/address/${address}/`,
+  showToken: (address) => `https://www.oceanpchain.com/token/${address}/`,
+  showBlock: (block) => `https://oceanpchain.com/block/${block}/`,
 }
 
 export const formatTime = (unix) => {
