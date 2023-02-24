@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { isAddress } from '../../utils/index.js'
 import EthereumLogo from '../../assets/logo.png'
+import none from '../../assets/none.png'
 
 const BAD_IMAGES = {}
 
@@ -33,19 +34,19 @@ const StyledEthereumLogo = styled.div`
 export default function TokenLogo({ address, header = false, size = '24px', ...rest }) {
   const [error, setError] = useState(false)
 
-  useEffect(() => {
-    setError(false)
-  }, [address])
-
-  if (error || BAD_IMAGES[address]) {
-    return (
-      <Inline>
-        <span {...rest} alt={''} style={{ fontSize: size }} role="img" aria-label="face">
-          🤔
-        </span>
-      </Inline>
-    )
-  }
+  // TODO 2023年2月24日16:55:47 注释,  不知道什么意思
+  // useEffect(() => {
+  //   setError(false)
+  // }, [address])
+  // if (error || BAD_IMAGES[address]) {
+  //   return (
+  //     <Inline>
+  //       <span {...rest} alt={''} style={{ fontSize: size }} role="img" aria-label="face">
+  //         🤔
+  //       </span>
+  //     </Inline>
+  //   )
+  // }
 
   // hard coded fixes for trust wallet api issues
   if (address?.toLowerCase() === '0x5e74c9036fb86bd7ecdcb084a0673efc32ea31cb') {
@@ -74,20 +75,19 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   let path = ''
 
   switch (address) {
+    // CRA-USDT
     case '0xbcacc022eaf3f3fd1649d96ddd59a17a0ee068bc':
       path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/USDT.png';
       break;
+    // CRA-PECO
     case '0x625655dd34f87412430aa44fa48aeeed6ea5ba4b':
       path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/PECO.png';
       break;
-    case '0xe922f4627773683bbe4bce5575a381fb4585b1c1':
-      path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/CRA.png';
-      break;
     default:
-      path = '';
+      path = none;
   }
 
-  // const path = `https://faucet.crascan.com/images/tokens/${isAddress(
+  // const path = `https://faucet.oceanpchain.com/images/tokens/${isAddress(
   //   address
   // )}.png`
 

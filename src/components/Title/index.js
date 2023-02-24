@@ -6,7 +6,6 @@ import { Flex } from 'rebass'
 import Link from '../Link'
 import { RowFixed } from '../Row'
 import Logo from '../../assets/logo_white.png'
-import Wordmark from '../../assets/wordmark_white.png'
 
 import { BasicLink } from '../Link'
 import { useMedia } from 'react-use'
@@ -51,7 +50,8 @@ export default function Title() {
             <img width={'24px'} src={Logo} alt="logo" />
           </UniIcon>
           {!below1080 && (
-            <img width={'84px'} style={{ marginLeft: '8px', marginTop: '0px' }} src={Wordmark} alt="logo" />
+            <div style={{ marginLeft: '8px', marginTop: '0px', color: '#ff9500', fontWeight: 700, fontSize: '17px' }}>CRASwap</div>
+            // <img width={'84px'} style={{ marginLeft: '8px', marginTop: '0px' }} src={Wordmark} alt="logo" />
           )}
         </RowFixed>
         {below1080 && (
