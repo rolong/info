@@ -166,7 +166,7 @@ function AccountPage({ account }) {
         <RowBetween>
           <TYPE.body>
             <BasicLink to="/accounts">{'Accounts '}</BasicLink>→{' '}
-            <Link lineHeight={'145.23%'} href={'https://crascan.com/address/' + account} target="_blank">
+            <Link lineHeight={'145.23%'} href={'https://crcscan.com/address/' + account} target="_blank">
               {' '}
               {account?.slice(0, 42)}{' '}
             </Link>
@@ -177,8 +177,8 @@ function AccountPage({ account }) {
           <RowBetween>
             <span>
               <TYPE.header fontSize={24}>{account?.slice(0, 6) + '...' + account?.slice(38, 42)}</TYPE.header>
-              <Link lineHeight={'145.23%'} href={'https://crascan.com/address/' + account} target="_blank">
-                <TYPE.main fontSize={14}>View on Crascan</TYPE.main>
+              <Link lineHeight={'145.23%'} href={'https://crcscan.com/address/' + account} target="_blank">
+                <TYPE.main fontSize={14}>View on Crcscan</TYPE.main>
               </Link>
             </span>
             <AccountWrapper>
@@ -218,10 +218,10 @@ function AccountPage({ account }) {
                   <AutoColumn gap="0px">
                     {positions?.map((p, i) => {
                       if (p.pair.token1.symbol === 'WETH') {
-                        p.pair.token1.symbol = 'CRA'
+                        p.pair.token1.symbol = 'CRC'
                       }
                       if (p.pair.token0.symbol === 'WETH') {
-                        p.pair.token0.symbol = 'CRA'
+                        p.pair.token0.symbol = 'CRC'
                       }
                       return (
                         p.pair.id !== activePosition?.pair.id && (
