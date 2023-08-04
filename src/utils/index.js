@@ -42,13 +42,13 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
     return (
       `https://swap.crascan.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token0Address}/${'CRA'}`
+      `/v2/${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CRA' : token0Address}/${'CRA'}`
     )
   } else {
     return (
       `https://swap.crascan.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token0Address}/${token1Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token1Address
+      `/v2/${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CRA' : token0Address}/${token1Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CRA' : token1Address
       }`
     )
   }
@@ -58,8 +58,8 @@ export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
     return `https://swap.crascan.com/#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap.crascan.com/#/swap?inputCurrency=${token0Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token0Address
-      }&outputCurrency=${token1Address === '0xe922f4627773683bbe4bce5575a381fb4585b1c1' ? 'CRA' : token1Address}`
+    return `https://swap.crascan.com/#/swap?inputCurrency=${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CRA' : token0Address
+      }&outputCurrency=${token1Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CRA' : token1Address}`
   }
 }
 

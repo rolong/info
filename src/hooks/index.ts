@@ -14,13 +14,13 @@ export function useColor(tokenAddress, token) {
     // )}.png`
     let path = ''
     switch (tokenAddress) {
-      case '0xbcacc022eaf3f3fd1649d96ddd59a17a0ee068bc':
+      case '0x0f4f1ce14ff3094b7cad5dc6d6508b5962a09c3f':
         path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/USDT.png';
         break;
-      case '0x625655dd34f87412430aa44fa48aeeed6ea5ba4b':
+      case '0xca8ae77eb0cecaa49141ca7c264fffd5c6460a06':
         path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/PECO.png';
         break;
-      case '0xe922f4627773683bbe4bce5575a381fb4585b1c1':
+      case '0x25f031051cfb70af0f519922898e75737aca84ff':
         path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/CRA.png';
         break;
       default:
