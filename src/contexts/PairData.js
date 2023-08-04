@@ -187,16 +187,16 @@ async function getBulkPairData(pairList, ethPrice) {
   const ts = await getBlocksFromTimestamps([t1, t2, tWeek])
   console.log('ts.length', ts.length);
   if (ts.length === 0) {
-    ts.push({ number: "79033", timestamp: "0" })
-    ts.push({ number: "79033", timestamp: "0" })
-    ts.push({ number: "79033", timestamp: "0" })
+    ts.push({ number: "60641", timestamp: "0" })
+    ts.push({ number: "60642", timestamp: "0" })
+    ts.push({ number: "60643", timestamp: "0" })
   }
   if (ts.length === 1) {
-    ts.push({ number: "79033", timestamp: "0" })
-    ts.push({ number: "79033", timestamp: "0" })
+    ts.push({ number: "60641", timestamp: "0" })
+    ts.push({ number: "60642", timestamp: "0" })
   }
   if (ts.length === 2) {
-    ts.push({ number: "79033", timestamp: "0" })
+    ts.push({ number: "60643", timestamp: "0" })
   }
   let [{ number: b1 }, { number: b2 }, { number: bWeek }] = ts
 
