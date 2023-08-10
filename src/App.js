@@ -102,8 +102,10 @@ function App() {
   const globalChartData = useGlobalChartData()
   // const [latestBlock, headBlock] = useLatestBlocks()
 
-  console.log('Object.keys(globalData)', Object.keys(globalData));
-  console.log('globalChartData', globalChartData);
+  // console.log('Object.keys(globalData)', Object.keys(globalData));
+  // console.log('globalChartData', globalChartData);
+  console.log('globalData', globalData);
+  console.log('Object.keys(globalData).length', Object.keys(globalData).length);
   //console.log('Object.keys(globalChartData)', Object.keys(globalChartData));
 
   // show warning

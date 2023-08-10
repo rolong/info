@@ -221,6 +221,8 @@ export default function Provider({ children }) {
  */
 
 async function getGlobalData(ethPrice, oldEthPrice) {
+  console.log("getGlobalData ...")
+
   // data for each day , historic data used for % changes
   let data = {}
   let oneDayData = {}
@@ -248,6 +250,8 @@ async function getGlobalData(ethPrice, oldEthPrice) {
       fetchPolicy: 'cache-first',
     })
     data = result.data.uniswapFactories[0]
+
+    console.log("data", data)
 
     // fetch the historical data
     let oneDayResult = await client.query({
@@ -583,6 +587,7 @@ export function useGlobalData() {
       fetchData()
     }
   }, [ethPrice, oldEthPrice, update, data, updateAllPairsInUniswap, updateAllTokensInUniswap])
+  console.log("useGlobalData ...", data);
 
   return data || {}
 }

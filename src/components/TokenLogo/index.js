@@ -57,7 +57,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0x25f031051cfb70af0f519922898e75737aca84ff') {
+  if (address?.toLowerCase() === '0xe2cc70827823bc67f0577776a8adbbd00f56356a') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -75,13 +75,13 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   let path = ''
 
   switch (address) {
-    // CRA-USDT
-    case '0x0f4f1ce14ff3094b7cad5dc6d6508b5962a09c3f':
-      path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/USDT.png';
+    // MOD-USDT
+    case '0x326778dfe5a79941487bd0a3c8b4de4dc773359d':
+      path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
       break;
-    // CRA-PECO
-    case '0xca8ae77eb0cecaa49141ca7c264fffd5c6460a06':
-      path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/PECO.png';
+    // MOD-PECO
+    case '0x20209a0404b22384f65fff7a6539c5a98603b375':
+      path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/MOD.png';
       break;
     default:
       path = none;
