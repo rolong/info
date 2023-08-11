@@ -57,7 +57,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0x174052e94c5c5feed3cda3907d35c24b68702d2e') {
+  if (address?.toLowerCase() === '0xbcacc022eaf3f3fd1649d96ddd59a17a0ee068bc') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -76,7 +76,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
 
   switch (address) {
     // CRC-USDT
-    case '0xd017516fe6f7db83c7b446bf7f3bbafa3f84701c':
+    case '0x3d27c130aa606cb9fd05a6ab39d93280a41d5dd6':
       path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/USDT.png';
       break;
     // CRC-PECO

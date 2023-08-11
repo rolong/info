@@ -42,13 +42,13 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
     return (
       `https://swap.crcscan.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x174052e94c5c5feed3cda3907d35c24b68702d2e' ? 'CRC' : token0Address}/${'CRC'}`
+      `/v2/${token0Address === '0xbcacc022eaf3f3fd1649d96ddd59a17a0ee068bc' ? 'CRC' : token0Address}/${'CRC'}`
     )
   } else {
     return (
       `https://swap.crcscan.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x174052e94c5c5feed3cda3907d35c24b68702d2e' ? 'CRC' : token0Address}/${token1Address === '0x174052e94c5c5feed3cda3907d35c24b68702d2e' ? 'CRC' : token1Address
+      `/v2/${token0Address === '0xbcacc022eaf3f3fd1649d96ddd59a17a0ee068bc' ? 'CRC' : token0Address}/${token1Address === '0xbcacc022eaf3f3fd1649d96ddd59a17a0ee068bc' ? 'CRC' : token1Address
       }`
     )
   }
@@ -58,8 +58,8 @@ export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
     return `https://swap.crcscan.com/#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap.crcscan.com/#/swap?inputCurrency=${token0Address === '0x174052e94c5c5feed3cda3907d35c24b68702d2e' ? 'CRC' : token0Address
-      }&outputCurrency=${token1Address === '0x174052e94c5c5feed3cda3907d35c24b68702d2e' ? 'CRC' : token1Address}`
+    return `https://swap.crcscan.com/#/swap?inputCurrency=${token0Address === '0xbcacc022eaf3f3fd1649d96ddd59a17a0ee068bc' ? 'CRC' : token0Address
+      }&outputCurrency=${token1Address === '0xbcacc022eaf3f3fd1649d96ddd59a17a0ee068bc' ? 'CRC' : token1Address}`
   }
 }
 
