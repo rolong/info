@@ -218,10 +218,10 @@ function AccountPage({ account }) {
                   <AutoColumn gap="0px">
                     {positions?.map((p, i) => {
                       if (p.pair.token1.symbol === 'WETH') {
-                        p.pair.token1.symbol = 'MAX'
+                        p.pair.token1.symbol = 'MAC'
                       }
                       if (p.pair.token0.symbol === 'WETH') {
-                        p.pair.token0.symbol = 'MAX'
+                        p.pair.token0.symbol = 'MAC'
                       }
                       return (
                         p.pair.id !== activePosition?.pair.id && (

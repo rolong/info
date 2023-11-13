@@ -42,13 +42,13 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
     return (
       `https://swap./#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xe2cc70827823bc67f0577776a8adbbd00f56356a' ? 'MAX' : token0Address}/${'MAX'}`
+      `/v2/${token0Address === '0xe2cc70827823bc67f0577776a8adbbd00f56356a' ? 'MAC' : token0Address}/${'MAC'}`
     )
   } else {
     return (
       `https://swap./#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xe2cc70827823bc67f0577776a8adbbd00f56356a' ? 'MAX' : token0Address}/${token1Address === '0xe2cc70827823bc67f0577776a8adbbd00f56356a' ? 'MAX' : token1Address
+      `/v2/${token0Address === '0xe2cc70827823bc67f0577776a8adbbd00f56356a' ? 'MAC' : token0Address}/${token1Address === '0xe2cc70827823bc67f0577776a8adbbd00f56356a' ? 'MAC' : token1Address
       }`
     )
   }
@@ -58,8 +58,8 @@ export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
     return `https://swap./#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap./#/swap?inputCurrency=${token0Address === '0xe2cc70827823bc67f0577776a8adbbd00f56356a' ? 'MAX' : token0Address
-      }&outputCurrency=${token1Address === '0xe2cc70827823bc67f0577776a8adbbd00f56356a' ? 'MAX' : token1Address}`
+    return `https://swap./#/swap?inputCurrency=${token0Address === '0xe2cc70827823bc67f0577776a8adbbd00f56356a' ? 'MAC' : token0Address
+      }&outputCurrency=${token1Address === '0xe2cc70827823bc67f0577776a8adbbd00f56356a' ? 'MAC' : token1Address}`
   }
 }
 
