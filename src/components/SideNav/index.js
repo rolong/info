@@ -164,8 +164,8 @@ function SideNav({ history }) {
           </AutoColumn>
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
             <HeaderText>
-              <Link href="https://modoscan.com" target="_blank">
-                MODSCAN
+              <Link href="https://maxchainpro.com" target="_blank">
+                MAXSCAN
               </Link>
             </HeaderText>
             <Toggle isActive={isDark} toggle={toggleDarkMode} />

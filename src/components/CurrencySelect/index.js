@@ -46,7 +46,7 @@ const CurrencySelect = () => {
 
   const getOther = () => {
     if (currency === 'USD') {
-      return 'MOD'
+      return 'MAX'
     } else {
       return 'USD'
     }
