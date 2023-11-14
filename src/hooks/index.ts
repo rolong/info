@@ -9,21 +9,19 @@ export function useColor(tokenAddress, token) {
   const [color, setColor] = useState('#2172E5')
   if (tokenAddress) {
 
-    // const path = `https://faucet.modoscan.com/images/tokens/${isAddress(
+    // const path = `https://faucet./images/tokens/${isAddress(
     //   tokenAddress
     // )}.png`
     let path = ''
     switch (tokenAddress) {
-      case '0x326778dfe5a79941487bd0a3c8b4de4dc773359d':
+      case '0x1c7b934c3a567bb61913aeb6bff6eb4eea227e24':
         path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
         break;
-      case '0x20209a0404b22384f65fff7a6539c5a98603b375':
-        path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/MOD.png';
-        break;
       case '0xe2cc70827823bc67f0577776a8adbbd00f56356a':
-        path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/MOD-chain.png';
+        path = 'https://asianmeta.oss-ap-southeast-1.aliyuncs.com/MAC.png';
         break;
       default:
+        console.log('tokenAddress', tokenAddress);
         path = '';
     }
 

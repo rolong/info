@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import { isAddress } from '../../utils/index.js'
-import EthereumLogo from '../../assets/logo.png'
+// import { isAddress } from '../../utils/index.js'
+// import EthereumLogo from '../../assets/logo.png'
+import MaccoinLogo from '../../assets/mac-coin.png'
 import none from '../../assets/none.png'
 
 const BAD_IMAGES = {}
@@ -61,7 +62,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
-          src={EthereumLogo}
+          src={MaccoinLogo}
           style={{
             boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
             borderRadius: '24px',
@@ -75,15 +76,15 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   let path = ''
 
   switch (address) {
-    // MOD-USDT
-    case '0x326778dfe5a79941487bd0a3c8b4de4dc773359d':
+    // MAC-USDT
+    case '0x1c7b934c3a567bb61913aeb6bff6eb4eea227e24':
       path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
       break;
-    // MOD-PECO
-    case '0x20209a0404b22384f65fff7a6539c5a98603b375':
-      path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/MOD.png';
+    case '0x137e7cfb01e926290aa31ded477770906c456a89':
+      path = 'https://info.maxchainpro.com/max-icon.png';
       break;
     default:
+      // console.log("Need TokenLogo:", address);
       path = none;
   }
 
