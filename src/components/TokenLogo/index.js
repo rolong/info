@@ -80,7 +80,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
       path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/USDT.png';
       break;
     // CRC-PECO
-    case '0xda87a183677d9c5ae5a734dce51740c1bb815c87':
+    case '0x4a837d3f00fb00b1c01b51789417f7e30a6a0ef5':
       path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/PECO.png';
       break;
     default:
