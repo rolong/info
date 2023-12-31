@@ -14,7 +14,7 @@ export function useColor(tokenAddress, token) {
     // )}.png`
     let path = ''
     switch (tokenAddress) {
-      case '0x1c7b934c3a567bb61913aeb6bff6eb4eea227e24':
+      case '0x98da33112405446977726fad934c2f40e5d0a17f':
         path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
         break;
       case '0xe2cc70827823bc67f0577776a8adbbd00f56356a':

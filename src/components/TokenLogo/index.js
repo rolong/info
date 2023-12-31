@@ -77,10 +77,10 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
 
   switch (address) {
     // MAC-USDT
-    case '0x1c7b934c3a567bb61913aeb6bff6eb4eea227e24':
+    case '0x98da33112405446977726fad934c2f40e5d0a17f':
       path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
       break;
-    case '0x137e7cfb01e926290aa31ded477770906c456a89':
+    case '0xd1665f8e891add806be9351b258db4189be87ade':
       path = 'https://info.maxchainpro.com/max-icon.png';
       break;
     default:
