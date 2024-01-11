@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 // import { isAddress } from '../../utils/index.js'
-// import EthereumLogo from '../../assets/logo.png'
-import MaccoinLogo from '../../assets/mac-coin.png'
+import EthereumLogo from '../../assets/logo.png'
 import none from '../../assets/none.png'
 
 const BAD_IMAGES = {}
@@ -58,11 +57,11 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0xe2cc70827823bc67f0577776a8adbbd00f56356a') {
+  if (address?.toLowerCase() === '0xc88849cb71f59b378b62d5b1f24649d3a4d9a832') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
-          src={MaccoinLogo}
+          src={EthereumLogo}
           style={{
             boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
             borderRadius: '24px',
@@ -76,12 +75,12 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   let path = ''
 
   switch (address) {
-    // MAC-USDT
-    case '0x98da33112405446977726fad934c2f40e5d0a17f':
+    // VGL-USDT
+    case '0x20478414745e34a1468f20041e4a33c73c8a2942':
       path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
       break;
-    case '0xd1665f8e891add806be9351b258db4189be87ade':
-      path = 'https://info.maxchainpro.com/max-icon.png';
+    case '0xc5997ced70db48c0137d8fa218caffc5cfeb9b74':
+      path = 'https://asianmeta.oss-ap-southeast-1.aliyuncs.com/VGL.png';
       break;
     default:
       // console.log("Need TokenLogo:", address);
