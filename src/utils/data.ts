@@ -15,9 +15,9 @@ interface BasicData {
 // names since entitiy was created in subgraph
 // keys are lowercase token addresses <--------
 const TOKEN_OVERRIDES: { [address: string]: { name: string; symbol: string } } = {
-  '0x2191a638f058b881007cc7dfe77b11d282f30bf1': {
-    name: 'BAT (Wrapped)',
-    symbol: 'BAT',
+  '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663': {
+    name: 'BAD (Wrapped)',
+    symbol: 'BAD',
   }
 }
 

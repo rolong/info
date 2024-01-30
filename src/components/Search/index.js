@@ -430,10 +430,10 @@ export const Search = ({ small = false }) => {
               : below410
                 ? 'Search...'
                 : below470
-                  ? 'Search BATSWAP...'
+                  ? 'Search BADSWAP...'
                   : below700
                     ? 'Search pairs and tokens...'
-                    : 'Search BATSWAP pairs and tokens...'
+                    : 'Search BADSWAP pairs and tokens...'
           }
           value={value}
           onChange={(e) => {

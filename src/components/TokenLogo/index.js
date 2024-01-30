@@ -57,7 +57,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0x2191a638f058b881007cc7dfe77b11d282f30bf1') {
+  if (address?.toLowerCase() === '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -75,12 +75,15 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   let path = ''
 
   switch (address) {
-    // BAT-USDT
-    case '0x3ff4519cfe78b75d23ae23eea04eb7eeb8280fa4':
+    // BAD-USDT
+    case '0xa155a80b65bfb64f62ae6c1f82d5fc4556435562':
       path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
       break;
-    case '0x2191a638f058b881007cc7dfe77b11d282f30bf1':
-      path = 'https://asianmeta.oss-ap-southeast-1.aliyuncs.com/BAT.png';
+    case '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663':
+      path = 'https://wallet.badchainpro.com/image/BAD.png';
+      break;
+    case '0x750a34c2f060f9e982151e9ff5f52748fe8647f5':
+      path = 'https://wallet.badchainpro.com/image/BAE.png';
       break;
     default:
       console.log("Need TokenLogo:", address);

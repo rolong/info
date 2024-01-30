@@ -42,13 +42,13 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
     return (
       `https://swap./#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token0Address}/${'BAT'}`
+      `/v2/${token0Address === '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663' ? 'BAD' : token0Address}/${'BAD'}`
     )
   } else {
     return (
       `https://swap./#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token0Address}/${token1Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token1Address
+      `/v2/${token0Address === '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663' ? 'BAD' : token0Address}/${token1Address === '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663' ? 'BAD' : token1Address
       }`
     )
   }
@@ -58,8 +58,8 @@ export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
     return `https://swap./#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap./#/swap?inputCurrency=${token0Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token0Address
-      }&outputCurrency=${token1Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token1Address}`
+    return `https://swap./#/swap?inputCurrency=${token0Address === '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663' ? 'BAD' : token0Address
+      }&outputCurrency=${token1Address === '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663' ? 'BAD' : token1Address}`
   }
 }
 
@@ -301,10 +301,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `https://bahamutchainpro.com/tx/${tx}/`,
+  showTransaction: (tx) => `https://badchainpro.com/tx/${tx}/`,
   showAddress: (address) => `https://www./address/${address}/`,
   showToken: (address) => `https://www./token/${address}/`,
-  showBlock: (block) => `https://bahamutchainpro.com/block/${block}/`,
+  showBlock: (block) => `https://badchainpro.com/block/${block}/`,
 }
 
 export const formatTime = (unix) => {

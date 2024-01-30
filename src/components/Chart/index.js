@@ -63,8 +63,8 @@ const Chart = ({ data, chartOption, currencyUnit, symbol }) => {
               strokeWidth={2}
               dot={false}
               type="monotone"
-              name={currencyUnit === 'BAT' ? 'Price (ETH/' + symbol + ')' : 'Price (USD/' + symbol + ')'}
-              dataKey={currencyUnit === 'BAT' ? 'ethPerToken' : 'tokenPriceUSD'}
+              name={currencyUnit === 'BAD' ? 'Price (ETH/' + symbol + ')' : 'Price (USD/' + symbol + ')'}
+              dataKey={currencyUnit === 'BAD' ? 'ethPerToken' : 'tokenPriceUSD'}
               yAxisId={2}
               fill="var(--c-token)"
               opacity={'0.4'}
