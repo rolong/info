@@ -42,13 +42,13 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
     return (
       `https://swap./#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xc88849cb71f59b378b62d5b1f24649d3a4d9a832' ? 'VGL' : token0Address}/${'VGL'}`
+      `/v2/${token0Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token0Address}/${'BAT'}`
     )
   } else {
     return (
       `https://swap./#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xc88849cb71f59b378b62d5b1f24649d3a4d9a832' ? 'VGL' : token0Address}/${token1Address === '0xc88849cb71f59b378b62d5b1f24649d3a4d9a832' ? 'VGL' : token1Address
+      `/v2/${token0Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token0Address}/${token1Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token1Address
       }`
     )
   }
@@ -58,8 +58,8 @@ export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
     return `https://swap./#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap./#/swap?inputCurrency=${token0Address === '0xc88849cb71f59b378b62d5b1f24649d3a4d9a832' ? 'VGL' : token0Address
-      }&outputCurrency=${token1Address === '0xc88849cb71f59b378b62d5b1f24649d3a4d9a832' ? 'VGL' : token1Address}`
+    return `https://swap./#/swap?inputCurrency=${token0Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token0Address
+      }&outputCurrency=${token1Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token1Address}`
   }
 }
 
@@ -301,10 +301,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `https://vglscan.com/tx/${tx}/`,
+  showTransaction: (tx) => `https://bahamutchainpro.com/tx/${tx}/`,
   showAddress: (address) => `https://www./address/${address}/`,
   showToken: (address) => `https://www./token/${address}/`,
-  showBlock: (block) => `https://vglscan.com/block/${block}/`,
+  showBlock: (block) => `https://bahamutchainpro.com/block/${block}/`,
 }
 
 export const formatTime = (unix) => {

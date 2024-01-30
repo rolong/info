@@ -365,6 +365,7 @@ const getChartData = async (oldestDateToFetch, offsetData) => {
         dayData.dailyVolumeUSD = parseFloat(dayData.dailyVolumeUSD)
       })
 
+      console.log('data:', data)
       // fill in empty days ( there will be no day datas if no trades made that day )
       let timestamp = data[0].date ? data[0].date : oldestDateToFetch
       let latestLiquidityUSD = data[0].totalLiquidityUSD
