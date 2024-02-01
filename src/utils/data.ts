@@ -16,8 +16,8 @@ interface BasicData {
 // keys are lowercase token addresses <--------
 const TOKEN_OVERRIDES: { [address: string]: { name: string; symbol: string } } = {
   '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135': {
-    name: 'BAD (Wrapped)',
-    symbol: 'BAD',
+    name: 'GNS (Wrapped)',
+    symbol: 'GNS',
   }
 }
 

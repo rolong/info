@@ -42,13 +42,13 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
     return (
       `https://swap./#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'BAD' : token0Address}/${'BAD'}`
+      `/v2/${token0Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'GNS' : token0Address}/${'GNS'}`
     )
   } else {
     return (
       `https://swap./#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'BAD' : token0Address}/${token1Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'BAD' : token1Address
+      `/v2/${token0Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'GNS' : token0Address}/${token1Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'GNS' : token1Address
       }`
     )
   }
@@ -58,8 +58,8 @@ export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
     return `https://swap./#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap./#/swap?inputCurrency=${token0Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'BAD' : token0Address
-      }&outputCurrency=${token1Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'BAD' : token1Address}`
+    return `https://swap./#/swap?inputCurrency=${token0Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'GNS' : token0Address
+      }&outputCurrency=${token1Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'GNS' : token1Address}`
   }
 }
 

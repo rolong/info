@@ -75,12 +75,12 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   let path = ''
 
   switch (address) {
-    // BAD-USDT
+    // GNS-USDT
     case '0x3fe8bf95d8a6ebb630533e4f883637d891483fa6':
       path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
       break;
     case '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135':
-      path = 'https://wallet.gnschainpro.com/image/BAD.png';
+      path = 'https://wallet.gnschainpro.com/image/GNS.png';
       break;
     case '0x750a34c2f060f9e982151e9ff5f52748fe8647f5':
       path = 'https://wallet.gnschainpro.com/image/BAE.png';
