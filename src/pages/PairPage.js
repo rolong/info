@@ -203,7 +203,7 @@ function PairPage({ pairAddress, history }) {
             <TYPE.light style={{ textAlign: 'center' }}>
               {BLOCKED_WARNINGS[pairAddress] ?? `This pair is not supported.`}
             </TYPE.light>
-            <Link external={true} href={'https://badchainpro.com/address/' + pairAddress}>{`More about ${shortenAddress(
+            <Link external={true} href={'https://gnschainpro.com/address/' + pairAddress}>{`More about ${shortenAddress(
               pairAddress
             )}`}</Link>
           </AutoColumn>
@@ -498,7 +498,7 @@ function PairPage({ pairAddress, history }) {
                     </AutoRow>
                   </Column>
                   <ButtonLight color={backgroundColor}>
-                    <Link color={backgroundColor} external href={'https://badchainpro.com/address/' + pairAddress}>
+                    <Link color={backgroundColor} external href={'https://gnschainpro.com/address/' + pairAddress}>
                       View on Modoscan ↗
                     </Link>
                   </ButtonLight>

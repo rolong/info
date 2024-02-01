@@ -50,7 +50,7 @@ export default function Title() {
             <img width={'24px'} src={Logo} alt="logo" />
           </UniIcon>
           {!below1080 && (
-            <div style={{ marginLeft: '8px', marginTop: '0px', color: '#ff9500', fontWeight: 700, fontSize: '17px' }}>BADSWAP</div>
+            <div style={{ marginLeft: '8px', marginTop: '0px', color: '#ff9500', fontWeight: 700, fontSize: '17px' }}>GNSSWAP</div>
             // <img width={'84px'} style={{ marginLeft: '8px', marginTop: '0px' }} src={Wordmark} alt="logo" />
           )}
         </RowFixed>

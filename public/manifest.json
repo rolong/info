@@ -1,6 +1,6 @@
 {
-  "short_name": "BADSWAP Info",
-  "name": "View statistics for BADSWAP exchanges.",
+  "short_name": "GNSSWAP Info",
+  "name": "View statistics for GNSSWAP exchanges.",
   "icons": [
     {
       "src": "favicon.ico",

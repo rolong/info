@@ -42,13 +42,13 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
     return (
       `https://swap./#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663' ? 'BAD' : token0Address}/${'BAD'}`
+      `/v2/${token0Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'BAD' : token0Address}/${'BAD'}`
     )
   } else {
     return (
       `https://swap./#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663' ? 'BAD' : token0Address}/${token1Address === '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663' ? 'BAD' : token1Address
+      `/v2/${token0Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'BAD' : token0Address}/${token1Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'BAD' : token1Address
       }`
     )
   }
@@ -58,8 +58,8 @@ export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
     return `https://swap./#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap./#/swap?inputCurrency=${token0Address === '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663' ? 'BAD' : token0Address
-      }&outputCurrency=${token1Address === '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663' ? 'BAD' : token1Address}`
+    return `https://swap./#/swap?inputCurrency=${token0Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'BAD' : token0Address
+      }&outputCurrency=${token1Address === '0x8f3e0f35ac0a451eb5eada5bb44c1e139d8b2135' ? 'BAD' : token1Address}`
   }
 }
 
@@ -301,10 +301,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `https://badchainpro.com/tx/${tx}/`,
+  showTransaction: (tx) => `https://gnschainpro.com/tx/${tx}/`,
   showAddress: (address) => `https://www./address/${address}/`,
   showToken: (address) => `https://www./token/${address}/`,
-  showBlock: (block) => `https://badchainpro.com/block/${block}/`,
+  showBlock: (block) => `https://gnschainpro.com/block/${block}/`,
 }
 
 export const formatTime = (unix) => {
