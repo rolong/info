@@ -301,10 +301,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `https://badchainpro.com/tx/${tx}/`,
+  showTransaction: (tx) => `https://fscscan.com/tx/${tx}/`,
   showAddress: (address) => `https://www./address/${address}/`,
   showToken: (address) => `https://www./token/${address}/`,
-  showBlock: (block) => `https://badchainpro.com/block/${block}/`,
+  showBlock: (block) => `https://fscscan.com/block/${block}/`,
 }
 
 export const formatTime = (unix) => {

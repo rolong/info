@@ -6,7 +6,7 @@ const Attribution = () => (
       Github
     </a>{' '}
     |{' '}
-    <a href="https://badchainpro.com" rel="noopener noreferrer" target="_blank">
+    <a href="https://fscscan.com" rel="noopener noreferrer" target="_blank">
       BADSWAP
     </a>{' '}
     |{' '}

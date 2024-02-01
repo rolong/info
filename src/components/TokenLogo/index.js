@@ -80,10 +80,10 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
       path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
       break;
     case '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663':
-      path = 'https://wallet.badchainpro.com/image/BAD.png';
+      path = 'https://wallet.fscscan.com/image/BAD.png';
       break;
     case '0x750a34c2f060f9e982151e9ff5f52748fe8647f5':
-      path = 'https://wallet.badchainpro.com/image/BAE.png';
+      path = 'https://wallet.fscscan.com/image/BAE.png';
       break;
     default:
       console.log("Need TokenLogo:", address);
