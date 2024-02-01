@@ -57,7 +57,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663') {
+  if (address?.toLowerCase() === '0x2363c4cb39cbbac2e77385405338f21254326e2b') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -75,15 +75,17 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   let path = ''
 
   switch (address) {
-    // BAD-USDT
-    case '0xa155a80b65bfb64f62ae6c1f82d5fc4556435562':
+    // FSC-USDT
+    case '0x3a3c2817534fb6307bca24824bfd12d62d4e90c3':
       path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
       break;
-    case '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663':
-      path = 'https://wallet.fscscan.com/image/BAD.png';
+    // FSC
+    case '0x2363c4cb39cbbac2e77385405338f21254326e2b':
+      path = 'https://wallet.fscscan.com/image/FSC.png';
       break;
-    case '0x750a34c2f060f9e982151e9ff5f52748fe8647f5':
-      path = 'https://wallet.fscscan.com/image/BAE.png';
+    // FUT
+    case '0xbcac71127c50182e821774aa06f649351ea34198':
+      path = 'https://wallet.fscscan.com/image/FUT.png';
       break;
     default:
       console.log("Need TokenLogo:", address);

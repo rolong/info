@@ -14,11 +14,11 @@ export function useColor(tokenAddress, token) {
     // )}.png`
     let path = ''
     switch (tokenAddress) {
-      case '0xa155a80b65bfb64f62ae6c1f82d5fc4556435562':
+      case '0x3a3c2817534fb6307bca24824bfd12d62d4e90c3':
         path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
         break;
-      case '0xdbe0ea7e3e7da9922e325fb26efd01adda5ca663':
-        path = 'https://asianmeta.oss-ap-southeast-1.aliyuncs.com/BAD.png';
+      case '0x2363c4cb39cbbac2e77385405338f21254326e2b':
+        path = 'https://asianmeta.oss-ap-southeast-1.aliyuncs.com/FSC.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);
