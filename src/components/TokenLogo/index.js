@@ -82,6 +82,9 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     case '0xc5997ced70db48c0137d8fa218caffc5cfeb9b74':
       path = 'https://wallet.kedscan.com/image/KED.png';
       break;
+    case '0x9fc2b2c36fb671355b44a2f3b92c83febe7d16b2':
+      path = 'https://wallet.kedscan.com/image/KFD.png';
+      break;
     default:
       // console.log("Need TokenLogo:", address);
       path = none;
