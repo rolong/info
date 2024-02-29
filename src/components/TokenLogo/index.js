@@ -57,7 +57,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0x9bec8a21fc49b3a7df270b80704b8563bbb322fe') {
+  if (address?.toLowerCase() === '0x5a81c003f1f1f33210bff1a26c56e12a0a72d465') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -75,12 +75,12 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   let path = ''
 
   switch (address) {
-    // KED-USDT
-    case '0x0738fbaca62727cc896d22a8b311d1a1d11afe23':
-      path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
+    // UCC-USDT
+    case '0x70c5a21b25ee21d84e537bd9981a97a42c7eb209':
+      path = 'https://s2.coinmarketcap.com/static/img/coins/64x64/825.png';
       break;
-    case '0xc5997ced70db48c0137d8fa218caffc5cfeb9b74':
-      path = 'https://wallet.kedscan.com/image/KED.png';
+    case '0x5a81c003f1f1f33210bff1a26c56e12a0a72d465':
+      path = 'https://uchain.ai/favicon/apple-touch-icon.png';
       break;
     default:
       // console.log("Need TokenLogo:", address);

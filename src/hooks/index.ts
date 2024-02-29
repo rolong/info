@@ -14,11 +14,11 @@ export function useColor(tokenAddress, token) {
     // )}.png`
     let path = ''
     switch (tokenAddress) {
-      case '0x0738fbaca62727cc896d22a8b311d1a1d11afe23':
+      case '0x70c5a21b25ee21d84e537bd9981a97a42c7eb209':
         path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
         break;
-      case '0x9bec8a21fc49b3a7df270b80704b8563bbb322fe':
-        path = 'https://wallet.kedscan.com/image/KED.png';
+      case '0x5a81c003f1f1f33210bff1a26c56e12a0a72d465':
+        path = 'https://wallet.uchain.ai/image/UCC.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);

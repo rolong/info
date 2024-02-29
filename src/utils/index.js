@@ -42,13 +42,13 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
     return (
       `https://swap./#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x9bec8a21fc49b3a7df270b80704b8563bbb322fe' ? 'KED' : token0Address}/${'KED'}`
+      `/v2/${token0Address === '0x5a81c003f1f1f33210bff1a26c56e12a0a72d465' ? 'UCC' : token0Address}/${'UCC'}`
     )
   } else {
     return (
       `https://swap./#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x9bec8a21fc49b3a7df270b80704b8563bbb322fe' ? 'KED' : token0Address}/${token1Address === '0x9bec8a21fc49b3a7df270b80704b8563bbb322fe' ? 'KED' : token1Address
+      `/v2/${token0Address === '0x5a81c003f1f1f33210bff1a26c56e12a0a72d465' ? 'UCC' : token0Address}/${token1Address === '0x5a81c003f1f1f33210bff1a26c56e12a0a72d465' ? 'UCC' : token1Address
       }`
     )
   }
@@ -58,8 +58,8 @@ export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
     return `https://swap./#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap./#/swap?inputCurrency=${token0Address === '0x9bec8a21fc49b3a7df270b80704b8563bbb322fe' ? 'KED' : token0Address
-      }&outputCurrency=${token1Address === '0x9bec8a21fc49b3a7df270b80704b8563bbb322fe' ? 'KED' : token1Address}`
+    return `https://swap./#/swap?inputCurrency=${token0Address === '0x5a81c003f1f1f33210bff1a26c56e12a0a72d465' ? 'UCC' : token0Address
+      }&outputCurrency=${token1Address === '0x5a81c003f1f1f33210bff1a26c56e12a0a72d465' ? 'UCC' : token1Address}`
   }
 }
 
@@ -301,10 +301,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `https://kedscan.com/tx/${tx}/`,
+  showTransaction: (tx) => `https://uchain.ai/tx/${tx}/`,
   showAddress: (address) => `https://www./address/${address}/`,
   showToken: (address) => `https://www./token/${address}/`,
-  showBlock: (block) => `https://kedscan.com/block/${block}/`,
+  showBlock: (block) => `https://uchain.ai/block/${block}/`,
 }
 
 export const formatTime = (unix) => {

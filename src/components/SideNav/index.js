@@ -164,7 +164,7 @@ function SideNav({ history }) {
           </AutoColumn>
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
             <HeaderText>
-              <Link href="https://kedscan.com" target="_blank">
+              <Link href="https://uchain.ai" target="_blank">
                 MAXSCAN
               </Link>
             </HeaderText>
