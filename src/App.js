@@ -106,7 +106,7 @@ function App() {
   // console.log('globalChartData', globalChartData);
   // console.log('globalData', globalData);
   // console.log('Object.keys(globalData).length', Object.keys(globalData).length);
-  //console.log('Object.keys(globalChartData)', Object.keys(globalChartData));
+  // console.log('Object.keys(globalChartData)', Object.keys(globalChartData));
 
   // show warning
   // const showWarning = headBlock && latestBlock ? headBlock - latestBlock > BLOCK_DIFFERENCE_THRESHOLD : false

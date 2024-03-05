@@ -40,13 +40,13 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://swap./#/` +
+      `https://uswap.uchain.ai/#/` +
       (remove ? `remove` : `add`) +
       `/v2/${token0Address === '0x5a81c003f1f1f33210bff1a26c56e12a0a72d465' ? 'UCC' : token0Address}/${'UCC'}`
     )
   } else {
     return (
-      `https://swap./#/` +
+      `https://uswap.uchain.ai/#/` +
       (remove ? `remove` : `add`) +
       `/v2/${token0Address === '0x5a81c003f1f1f33210bff1a26c56e12a0a72d465' ? 'UCC' : token0Address}/${token1Address === '0x5a81c003f1f1f33210bff1a26c56e12a0a72d465' ? 'UCC' : token1Address
       }`
@@ -56,19 +56,19 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://swap./#/swap?inputCurrency=${token0Address}`
+    return `https://uswap.uchain.ai/#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap./#/swap?inputCurrency=${token0Address === '0x5a81c003f1f1f33210bff1a26c56e12a0a72d465' ? 'UCC' : token0Address
+    return `https://uswap.uchain.ai/#/swap?inputCurrency=${token0Address === '0x5a81c003f1f1f33210bff1a26c56e12a0a72d465' ? 'UCC' : token0Address
       }&outputCurrency=${token1Address === '0x5a81c003f1f1f33210bff1a26c56e12a0a72d465' ? 'UCC' : token1Address}`
   }
 }
 
 export function getMiningPoolLink(token0Address) {
-  return `https://swap./#/uni/ETH/${token0Address}`
+  return `https://uswap.uchain.ai/#/uni/ETH/${token0Address}`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://swap./#/uni'
+  let baseUniswapUrl = 'https://uswap.uchain.ai/#/uni'
   if (!linkVariable) {
     return baseUniswapUrl
   }
