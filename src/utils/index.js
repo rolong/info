@@ -42,13 +42,13 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
     return (
       `https://swap./#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token0Address}/${'BAT'}`
+      `/v2/${token0Address === '0xa3951abffd0ea76c91b7009f718dfccce505c83e' ? 'BAT' : token0Address}/${'BAT'}`
     )
   } else {
     return (
       `https://swap./#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token0Address}/${token1Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token1Address
+      `/v2/${token0Address === '0xa3951abffd0ea76c91b7009f718dfccce505c83e' ? 'BAT' : token0Address}/${token1Address === '0xa3951abffd0ea76c91b7009f718dfccce505c83e' ? 'BAT' : token1Address
       }`
     )
   }
@@ -58,8 +58,8 @@ export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
     return `https://swap./#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap./#/swap?inputCurrency=${token0Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token0Address
-      }&outputCurrency=${token1Address === '0x2191a638f058b881007cc7dfe77b11d282f30bf1' ? 'BAT' : token1Address}`
+    return `https://swap./#/swap?inputCurrency=${token0Address === '0xa3951abffd0ea76c91b7009f718dfccce505c83e' ? 'BAT' : token0Address
+      }&outputCurrency=${token1Address === '0xa3951abffd0ea76c91b7009f718dfccce505c83e' ? 'BAT' : token1Address}`
   }
 }
 
