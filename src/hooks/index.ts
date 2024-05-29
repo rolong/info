@@ -9,19 +9,19 @@ export function useColor(tokenAddress, token) {
   const [color, setColor] = useState('#2172E5')
   if (tokenAddress) {
 
-    // const path = `https://faucet.oceanpchain.com/images/tokens/${isAddress(
+    // const path = `https://faucet.opcchainpro.com/images/tokens/${isAddress(
     //   tokenAddress
     // )}.png`
     let path = ''
     switch (tokenAddress) {
-      case '0xbcacc022eaf3f3fd1649d96ddd59a17a0ee068bc':
+      case '0xd7f2babd3167bf900ed1b1a829777a1309eb4076':
         path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/USDT.png';
         break;
-      case '0x625655dd34f87412430aa44fa48aeeed6ea5ba4b':
-        path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/PECO.png';
+      case '0x7910fb9ed92197e4ead9c7cb4781febef4bbd938':
+        path = 'https://wallet.opcchainpro.com/image/OPE.png';
         break;
-      case '0x4cf598849031433f5c27ecd9b5e152d700dcdd8e':
-        path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/OPC.png';
+      case '0xd2a5ee27b8534da6a80fe3fc4df9a2ef225f8cb1':
+        path = 'https://wallet.opcchainpro.com/image/OPC.png';
         break;
       default:
         path = '';

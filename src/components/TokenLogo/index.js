@@ -58,8 +58,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0x4cf598849031433f5c27ecd9b5e152d700dcdd8e') {
-    console.log(99999999999999)
+  if (address?.toLowerCase() === '0xd2a5ee27b8534da6a80fe3fc4df9a2ef225f8cb1') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -85,7 +84,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
       path = none;
   }
 
-  // const path = `https://faucet.oceanpchain.com/images/tokens/${isAddress(
+  // const path = `https://faucet.opcchainpro.com/images/tokens/${isAddress(
   //   address
   // )}.png`
 
