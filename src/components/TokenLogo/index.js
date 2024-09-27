@@ -50,13 +50,13 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   // }
 
   // hard coded fixes for trust wallet api issues
-  if (address?.toLowerCase() === '0x5e74c9036fb86bd7ecdcb084a0673efc32ea31cb') {
-    address = '0x42456d7084eacf4083f1140d3229471bba2949a8'
-  }
+  // if (address?.toLowerCase() === '0x5e74c9036fb86bd7ecdcb084a0673efc32ea31cb') {
+  //   address = '0x42456d7084eacf4083f1140d3229471bba2949a8'
+  // }
 
-  if (address?.toLowerCase() === '0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f') {
-    address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
-  }
+  // if (address?.toLowerCase() === '0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f') {
+  //   address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
+  // }
 
   if (address?.toLowerCase() === '0xd2a5ee27b8534da6a80fe3fc4df9a2ef225f8cb1') {
     return (
@@ -76,9 +76,14 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   let path = ''
 
   switch (address) {
-    // OPC-USDT
-    case '0x5d911a6218213e2e4d7d2b20a041178cc19fa287':
+    case '0xd7f2babd3167bf900ed1b1a829777a1309eb4076':
       path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/USDT.png';
+      break;
+    case '0x7910fb9ed92197e4ead9c7cb4781febef4bbd938':
+      path = 'https://wallet.opcchainpro.com/image/OPE.png';
+      break;
+    case '0xd2a5ee27b8534da6a80fe3fc4df9a2ef225f8cb1':
+      path = 'https://wallet.opcchainpro.com/image/OPC.png';
       break;
     default:
       path = none;
