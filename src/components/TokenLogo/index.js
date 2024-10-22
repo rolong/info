@@ -57,7 +57,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0x9bec8a21fc49b3a7df270b80704b8563bbb322fe') {
+  if (address?.toLowerCase() === '0xfd39d3cdf65a22aceedb0e647f9ea96b6a6be41e') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -75,15 +75,30 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   let path = ''
 
   switch (address) {
-    // KED-USDT
-    case '0x0738fbaca62727cc896d22a8b311d1a1d11afe23':
-      path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
+    // CNC-USDT
+    case '0xd61fffe4d99a9289750aed72a1eefbdbd741c191':
+      path = 'https://wallet.cncscan.com/image/USDT.png';
       break;
-    case '0xc5997ced70db48c0137d8fa218caffc5cfeb9b74':
-      path = 'https://wallet.kedscan.com/image/KED.png';
+    case '0xfd39d3cdf65a22aceedb0e647f9ea96b6a6be41e':
+      path = 'https://wallet.cncscan.com/image/CNC.png';
       break;
-    case '0x9fc2b2c36fb671355b44a2f3b92c83febe7d16b2':
-      path = 'https://wallet.kedscan.com/image/KFD.png';
+    case '0xbe869ff11bb3fad03bc3b3499bd400557a410dc3':
+      path = 'https://wallet.cncscan.com/image/HW.png';
+      break;
+    case '0x059c016b88e07b8e266419c95e6c793f44f5a489':
+      path = 'https://wallet.cncscan.com/image/BWA.png';
+      break;
+    case '0x02869c1d9123cf20c2f97d69dd38ce2245919464':
+      path = 'https://wallet.cncscan.com/image/MER.png';
+      break;
+    case '0x4b6d3a2862915e1d17d604374fc95bb6b78a9e55':
+      path = 'https://wallet.cncscan.com/image/OMC.png';
+      break;
+    case '0xba65e997e5d7e3e77c0fa8eb78b660cc4bf90d3f':
+      path = 'https://wallet.cncscan.com/image/FAC.png';
+      break;
+    case '0x73f844552bcf4402aa51fc4371107749a4eb8dd0':
+      path = 'https://wallet.cncscan.com/image/CBR.png';
       break;
     default:
       // console.log("Need TokenLogo:", address);
