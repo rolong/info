@@ -57,7 +57,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0xc88849cb71f59b378b62d5b1f24649d3a4d9a832') {
+  if (address?.toLowerCase() === '0x25dfa1b0a4f5c69ce3e9383a1d80f9082a3091dd') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -76,10 +76,10 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
 
   switch (address) {
     // VGL-USDT
-    case '0x20478414745e34a1468f20041e4a33c73c8a2942':
+    case '0x7946ac4a9f8a276bdaae2d4c88211fdd2bbd182e':
       path = 'https://modoscan.oss-cn-hongkong.aliyuncs.com/USDT.png';
       break;
-    case '0xc5997ced70db48c0137d8fa218caffc5cfeb9b74':
+    case '0x1778f92de8b6eb8ac63ccab8e43695c0b9c1816b':
       path = 'https://asianmeta.oss-ap-southeast-1.aliyuncs.com/VGL.png';
       break;
     default:
