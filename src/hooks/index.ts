@@ -14,10 +14,10 @@ export function useColor(tokenAddress, token) {
     // )}.png`
     let path = ''
     switch (tokenAddress) {
-      case '0xd61fffe4d99a9289750aed72a1eefbdbd741c191':
+      case '0x2a9050141a57d19e4cf46215d00b3daa8b5353af':
         path = 'https://wallet.cncscan.com/image/USDT.png';
         break;
-      case '0xfd39d3cdf65a22aceedb0e647f9ea96b6a6be41e':
+      case '0x872e071a2165f7bd4923dda4e2a8a425bb86b4ca':
         path = 'https://wallet.cncscan.com/image/CNC.png';
         break;
       case '0xbe869ff11bb3fad03bc3b3499bd400557a410dc3':

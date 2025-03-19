@@ -57,7 +57,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0xfd39d3cdf65a22aceedb0e647f9ea96b6a6be41e') {
+  if (address?.toLowerCase() === '0x872e071a2165f7bd4923dda4e2a8a425bb86b4ca') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -76,28 +76,31 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
 
   switch (address) {
     // CNC-USDT
-    case '0xd61fffe4d99a9289750aed72a1eefbdbd741c191':
+    case '0x2a9050141a57d19e4cf46215d00b3daa8b5353af':
       path = 'https://wallet.cncscan.com/image/USDT.png';
       break;
-    case '0xfd39d3cdf65a22aceedb0e647f9ea96b6a6be41e':
+    case '0x872e071a2165f7bd4923dda4e2a8a425bb86b4ca':
       path = 'https://wallet.cncscan.com/image/CNC.png';
       break;
     case '0xbe869ff11bb3fad03bc3b3499bd400557a410dc3':
       path = 'https://wallet.cncscan.com/image/HW.png';
       break;
-    case '0x059c016b88e07b8e266419c95e6c793f44f5a489':
+    case '0x8d0cfefadc98f031a7edb42c1d6e6673806d94fc':
+      path = 'https://wallet.cncscan.com/image/SMP.png';
+      break;
+    case '0xe0ef7fc7a44c8a8bcb002dd743220cd3d3cb4746':
       path = 'https://wallet.cncscan.com/image/BWA.png';
       break;
     case '0x02869c1d9123cf20c2f97d69dd38ce2245919464':
       path = 'https://wallet.cncscan.com/image/MER.png';
       break;
-    case '0x4b6d3a2862915e1d17d604374fc95bb6b78a9e55':
+    case '0x02869c1d9123cf20c2f97d69dd38ce2245919464':
       path = 'https://wallet.cncscan.com/image/OMC.png';
       break;
-    case '0xba65e997e5d7e3e77c0fa8eb78b660cc4bf90d3f':
+    case '0x4b6d3a2862915e1d17d604374fc95bb6b78a9e55':
       path = 'https://wallet.cncscan.com/image/FAC.png';
       break;
-    case '0x73f844552bcf4402aa51fc4371107749a4eb8dd0':
+    case '0xb969f7bbd484e099b3d23277afb18727fcd8f4dd':
       path = 'https://wallet.cncscan.com/image/CBR.png';
       break;
     default:
