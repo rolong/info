@@ -76,11 +76,11 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
 
   switch (address) {
     // CNC-USDT
-    case '0x1d108857f80472e0741419b9deb1d50076dbefd6':
+    case '0xdcc741a0d7e12d98f322355bb4f42026cde32e5e':
       path = 'https://wallet.cncscan.com/image/USDT.png';
       break;
-    case '0x8da9d0f5fcb72a49d5108c5156d07182a3770e7a':
-      path = 'https://wallet-n3.cncscan.com/image/TYC.png';
+    case '0x60a774336ffe329401a70312d43711fce095c8ea':
+      path = 'https://wallet-n4.cncscan.com/image/BLD.png';
       break;
     case '0x872e071a2165f7bd4923dda4e2a8a425bb86b4ca':
       path = 'https://wallet.cncscan.com/image/CNC.png';
