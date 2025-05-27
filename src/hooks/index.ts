@@ -14,7 +14,7 @@ export function useColor(tokenAddress, token) {
     // )}.png`
     let path = ''
     switch (tokenAddress) {
-      case '0xdcc741a0d7e12d98f322355bb4f42026cde32e5e':
+      case '0xa117436cd703644044c15568b9eaa2eb2f9ac79a':
         path = 'https://wallet.cncscan.com/image/USDT.png';
         break;
       case '0x60a774336ffe329401a70312d43711fce095c8ea':
@@ -40,6 +40,9 @@ export function useColor(tokenAddress, token) {
         break;
       case '0x73f844552bcf4402aa51fc4371107749a4eb8dd0':
         path = 'https://wallet.cncscan.com/image/CBR.png';
+        break;
+      case '0x69be9ea4ff749707da64321fe337476bea5a1fff':
+        path = 'https://wallet-n8.cncscan.com/image/RDC.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);
