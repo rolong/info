@@ -14,7 +14,7 @@ export function useColor(tokenAddress, token) {
     // )}.png`
     let path = ''
     switch (tokenAddress) {
-      case '0xdcc741a0d7e12d98f322355bb4f42026cde32e5e':
+      case '0x8242c0c6d3242800e99a1614b16c7c6399512595':
         path = 'https://wallet.cncscan.com/image/USDT.png';
         break;
       case '0x60a774336ffe329401a70312d43711fce095c8ea':
