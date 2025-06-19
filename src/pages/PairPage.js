@@ -499,7 +499,7 @@ function PairPage({ pairAddress, history }) {
                   </Column>
                   <ButtonLight color={backgroundColor}>
                     <Link color={backgroundColor} external href={'https://cncscan.com/address/' + pairAddress}>
-                      View on Modoscan ↗
+                      View on CNCSCAN ↗
                     </Link>
                   </ButtonLight>
                 </TokenDetailsLayout>

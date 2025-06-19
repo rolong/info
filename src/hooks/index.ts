@@ -17,8 +17,8 @@ export function useColor(tokenAddress, token) {
       case '0x8242c0c6d3242800e99a1614b16c7c6399512595':
         path = 'https://wallet.cncscan.com/image/USDT.png';
         break;
-      case '0x60a774336ffe329401a70312d43711fce095c8ea':
-        path = 'https://wallet-n4.cncscan.com/image/BLD.png';
+      case '0x099aa853e4bdcfc3e8e2ddab813f1d30b75f47fa':
+        path = 'https://wallet-n5.cncscan.com/image/BWA.png';
         break;
       case '0x872e071a2165f7bd4923dda4e2a8a425bb86b4ca':
         path = 'https://wallet.cncscan.com/image/CNC.png';

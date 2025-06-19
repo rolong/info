@@ -421,7 +421,7 @@ function TokenPage({ address, history }) {
                   </Column>
                   <ButtonLight color={backgroundColor}>
                     <Link color={backgroundColor} external href={'https://cncscan.com/address/' + address}>
-                      View on Modoscan ↗
+                      View on CNCSCAN ↗
                     </Link>
                   </ButtonLight>
                 </TokenDetailsLayout>
