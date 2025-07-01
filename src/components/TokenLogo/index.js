@@ -77,11 +77,11 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   switch (address) {
     // CRC-USDT
     case '0x2a7b32eca0467a896ad0869561362aba27448e8e':
-      path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/USDT.png';
+      path = 'https://wallet.crcscan.com/image/USDT.png';
       break;
     // CRC-PECO
     case '0x4a837d3f00fb00b1c01b51789417f7e30a6a0ef5':
-      path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/PECO.png';
+      path = 'https://wallet.crcscan.com/image/PECO.png';
       break;
     default:
       console.log('address', address);

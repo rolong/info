@@ -15,13 +15,13 @@ export function useColor(tokenAddress, token) {
     let path = ''
     switch (tokenAddress) {
       case '0x2a7b32eca0467a896ad0869561362aba27448e8e':
-        path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/USDT.png';
+        path = 'https://wallet.crcscan.com/image/USDT.png';
         break;
       case '0x4a837d3f00fb00b1c01b51789417f7e30a6a0ef5':
-        path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/PECO.png';
+        path = 'https://wallet.crcscan.com/image/PECO.png';
         break;
       case '0x25f031051cfb70af0f519922898e75737aca84ff':
-        path = 'https://cra-ico.oss-cn-hongkong.aliyuncs.com/CRC.png';
+        path = 'https://wallet.crcscan.com/image/CRC.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);
