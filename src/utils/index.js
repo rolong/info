@@ -40,15 +40,15 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://swap.crcscan.com/#/` +
+      `https://swap.avcscan.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CRC' : token0Address}/${'CRC'}`
+      `/v2/${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'AVC' : token0Address}/${'AVC'}`
     )
   } else {
     return (
-      `https://swap.crcscan.com/#/` +
+      `https://swap.avcscan.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CRC' : token0Address}/${token1Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CRC' : token1Address
+      `/v2/${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'AVC' : token0Address}/${token1Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'AVC' : token1Address
       }`
     )
   }
@@ -56,19 +56,19 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://swap.crcscan.com/#/swap?inputCurrency=${token0Address}`
+    return `https://swap.avcscan.com/#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap.crcscan.com/#/swap?inputCurrency=${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CRC' : token0Address
-      }&outputCurrency=${token1Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CRC' : token1Address}`
+    return `https://swap.avcscan.com/#/swap?inputCurrency=${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'AVC' : token0Address
+      }&outputCurrency=${token1Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'AVC' : token1Address}`
   }
 }
 
 export function getMiningPoolLink(token0Address) {
-  return `https://swap.crcscan.com/#/uni/ETH/${token0Address}`
+  return `https://swap.avcscan.com/#/uni/ETH/${token0Address}`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://swap.crcscan.com/#/uni'
+  let baseUniswapUrl = 'https://swap.avcscan.com/#/uni'
   if (!linkVariable) {
     return baseUniswapUrl
   }
@@ -123,6 +123,12 @@ export async function splitQuery(query, localClient, vars, list, skipCount = 100
       end = skip + skipCount
     }
     let sliced = list.slice(skip, end)
+    // TODO 给无限请求做一个1秒延迟
+    await new Promise((resolve) => {
+      setTimeout(() => {
+        resolve()
+      }, 1000)
+    })
     let result = await localClient.query({
       query: query(...vars, sliced),
       fetchPolicy: 'cache-first',
@@ -169,7 +175,6 @@ export async function getBlocksFromTimestamps(timestamps, skipCount = 500) {
   if (timestamps?.length === 0) {
     return []
   }
-
   let fetchedData = await splitQuery(GET_BLOCKS, blockClient, [], timestamps, skipCount)
 
   let blocks = []
@@ -301,10 +306,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `https://crcscan.com/tx/${tx}/`,
-  showAddress: (address) => `https://www.crcscan.com/address/${address}/`,
-  showToken: (address) => `https://www.crcscan.com/token/${address}/`,
-  showBlock: (block) => `https://crcscan.com/block/${block}/`,
+  showTransaction: (tx) => `https://avcscan.com/tx/${tx}/`,
+  showAddress: (address) => `https://www.avcscan.com/address/${address}/`,
+  showToken: (address) => `https://www.avcscan.com/token/${address}/`,
+  showBlock: (block) => `https://avcscan.com/block/${block}/`,
 }
 
 export const formatTime = (unix) => {
