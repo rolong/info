@@ -40,13 +40,13 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://swap.cncchainpro.com/#/` +
+      `https://swap-n2.cncchainpro.com/#/` +
       (remove ? `remove` : `add`) +
       `/v2/${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CNC' : token0Address}/${'CNC'}`
     )
   } else {
     return (
-      `https://swap.cncchainpro.com/#/` +
+      `https://swap-n2.cncchainpro.com/#/` +
       (remove ? `remove` : `add`) +
       `/v2/${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CNC' : token0Address}/${token1Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CNC' : token1Address
       }`
@@ -56,19 +56,19 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://swap.cncchainpro.com/#/swap?inputCurrency=${token0Address}`
+    return `https://swap-n2.cncchainpro.com/#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap.cncchainpro.com/#/swap?inputCurrency=${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CNC' : token0Address
+    return `https://swap-n2.cncchainpro.com/#/swap?inputCurrency=${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CNC' : token0Address
       }&outputCurrency=${token1Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CNC' : token1Address}`
   }
 }
 
 export function getMiningPoolLink(token0Address) {
-  return `https://swap.cncchainpro.com/#/uni/ETH/${token0Address}`
+  return `https://swap-n2.cncchainpro.com/#/uni/ETH/${token0Address}`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://swap.cncchainpro.com/#/uni'
+  let baseUniswapUrl = 'https://swap-n2.cncchainpro.com/#/uni'
   if (!linkVariable) {
     return baseUniswapUrl
   }

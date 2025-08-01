@@ -15,8 +15,16 @@ export function useColor(tokenAddress, token) {
     let path = ''
     switch (tokenAddress) {
       // USDT
-      case '0x97c9ee7a779f100ed91983988bc9cd043945a25f':
-        path = 'https://wallet.cncchainpro.com/image/USDT.png';
+      case '0xbe294ddd23857f1b71b9af7f2b3688a2b788d379':
+        path = 'https://wallet-n2.cncchainpro.com/image/USDT.png';
+        break;
+      // RDO
+      case '0xae9a782bbe59cbaf9cd5a80294eb892e03f0cfb4':
+        path = 'https://wallet-n2.cncchainpro.com/image/RDO.png';
+        break;
+      // RDC
+      case '0x52fec36c1e375971173bcd4b13944c278a64000c':
+        path = 'https://wallet-n2.cncchainpro.com/image/RDC.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);
