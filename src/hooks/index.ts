@@ -9,22 +9,14 @@ export function useColor(tokenAddress, token) {
   const [color, setColor] = useState('#2172E5')
   if (tokenAddress) {
 
-    // const path = `https://faucet.avcscan.com/images/tokens/${isAddress(
+    // const path = `https://faucet.cncchainpro.com/images/tokens/${isAddress(
     //   tokenAddress
     // )}.png`
     let path = ''
     switch (tokenAddress) {
       // USDT
-      case '0xb77121cc7cc7e4fa868eca05a7f0b5f386d5c890':
-        path = 'https://wallet.avcscan.com/image/USDT.png';
-        break;
-      // USDX
-      case '0x85bf776e7f1259002613c4978fa147348242bf95':
-        path = 'https://wallet.avcscan.com/image/BET.png';
-        break;
-      // USDY
-      case '0x6a1da8a26639509fc504c3cfb810eeb3fa315b53':
-        path = 'https://wallet.avcscan.com/image/OPC.png';
+      case '0x97c9ee7a779f100ed91983988bc9cd043945a25f':
+        path = 'https://wallet.cncchainpro.com/image/USDT.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);

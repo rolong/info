@@ -46,7 +46,7 @@ const CurrencySelect = () => {
 
   const getOther = () => {
     if (currency === 'USD') {
-      return 'AVC'
+      return 'CNC'
     } else {
       return 'USD'
     }
