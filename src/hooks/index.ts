@@ -9,22 +9,22 @@ export function useColor(tokenAddress, token) {
   const [color, setColor] = useState('#2172E5')
   if (tokenAddress) {
 
-    // const path = `https://faucet.cncchainpro.com/images/tokens/${isAddress(
+    // const path = `https://faucet.crcchainpro.com/images/tokens/${isAddress(
     //   tokenAddress
     // )}.png`
     let path = ''
     switch (tokenAddress) {
       // USDT
-      case '0xbe294ddd23857f1b71b9af7f2b3688a2b788d379':
-        path = 'https://wallet-n2.cncchainpro.com/image/USDT.png';
+      case '0xcca12203b98f034a55b49253fe3314dc7edceb1f':
+        path = 'https://wallet.crcchainpro.com/image/USDT.png';
         break;
-      // RDO
-      case '0xae9a782bbe59cbaf9cd5a80294eb892e03f0cfb4':
-        path = 'https://wallet-n2.cncchainpro.com/image/RDO.png';
+      // PECO
+      case '0xd1971f5c28a7e56f3cf6bcd1ddbf05be749c6be2':
+        path = 'https://wallet.crcchainpro.com/image/PECO.png';
         break;
-      // RDC
-      case '0x52fec36c1e375971173bcd4b13944c278a64000c':
-        path = 'https://wallet-n2.cncchainpro.com/image/RDC.png';
+      // CDAO
+      case '0x12bacfb0e1b2255c779f106c686c71d945811d97':
+        path = 'https://wallet.crcchainpro.com/image/CDAO.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);

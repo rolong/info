@@ -40,15 +40,15 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://swap-n2.cncchainpro.com/#/` +
+      `https://swap.crcchainpro.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CNC' : token0Address}/${'CNC'}`
+      `/v2/${token0Address === '0x80b6e8d397bf1d110905090cd1890879fee0ab13' ? 'CRC' : token0Address}/${'CRC'}`
     )
   } else {
     return (
-      `https://swap-n2.cncchainpro.com/#/` +
+      `https://swap.crcchainpro.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CNC' : token0Address}/${token1Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CNC' : token1Address
+      `/v2/${token0Address === '0x80b6e8d397bf1d110905090cd1890879fee0ab13' ? 'CRC' : token0Address}/${token1Address === '0x80b6e8d397bf1d110905090cd1890879fee0ab13' ? 'CRC' : token1Address
       }`
     )
   }
@@ -56,19 +56,19 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://swap-n2.cncchainpro.com/#/swap?inputCurrency=${token0Address}`
+    return `https://swap.crcchainpro.com/#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap-n2.cncchainpro.com/#/swap?inputCurrency=${token0Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CNC' : token0Address
-      }&outputCurrency=${token1Address === '0x25f031051cfb70af0f519922898e75737aca84ff' ? 'CNC' : token1Address}`
+    return `https://swap.crcchainpro.com/#/swap?inputCurrency=${token0Address === '0x80b6e8d397bf1d110905090cd1890879fee0ab13' ? 'CRC' : token0Address
+      }&outputCurrency=${token1Address === '0x80b6e8d397bf1d110905090cd1890879fee0ab13' ? 'CRC' : token1Address}`
   }
 }
 
 export function getMiningPoolLink(token0Address) {
-  return `https://swap-n2.cncchainpro.com/#/uni/ETH/${token0Address}`
+  return `https://swap.crcchainpro.com/#/uni/ETH/${token0Address}`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://swap-n2.cncchainpro.com/#/uni'
+  let baseUniswapUrl = 'https://swap.crcchainpro.com/#/uni'
   if (!linkVariable) {
     return baseUniswapUrl
   }
@@ -306,10 +306,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `https://cncchainpro.com/tx/${tx}/`,
-  showAddress: (address) => `https://www.cncchainpro.com/address/${address}/`,
-  showToken: (address) => `https://www.cncchainpro.com/token/${address}/`,
-  showBlock: (block) => `https://cncchainpro.com/block/${block}/`,
+  showTransaction: (tx) => `https://crcchainpro.com/tx/${tx}/`,
+  showAddress: (address) => `https://www.crcchainpro.com/address/${address}/`,
+  showToken: (address) => `https://www.crcchainpro.com/token/${address}/`,
+  showBlock: (block) => `https://crcchainpro.com/block/${block}/`,
 }
 
 export const formatTime = (unix) => {
