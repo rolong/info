@@ -40,15 +40,15 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://swap-n3.cncchainpro.com/#/` +
+      `https://swap-n5.cncchainpro.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x276558eD66E6a7D0A817e69eB44B5BC06B560a52' ? 'CNC' : token0Address}/${'CNC'}`
+      `/v2/${token0Address === '0xb08e436185a51bf9022dda915b9f409ea9b3b348' ? 'CNC' : token0Address}/${'CNC'}`
     )
   } else {
     return (
-      `https://swap-n3.cncchainpro.com/#/` +
+      `https://swap-n5.cncchainpro.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x276558eD66E6a7D0A817e69eB44B5BC06B560a52' ? 'CNC' : token0Address}/${token1Address === '0x276558eD66E6a7D0A817e69eB44B5BC06B560a52' ? 'CNC' : token1Address
+      `/v2/${token0Address === '0xb08e436185a51bf9022dda915b9f409ea9b3b348' ? 'CNC' : token0Address}/${token1Address === '0xb08e436185a51bf9022dda915b9f409ea9b3b348' ? 'CNC' : token1Address
       }`
     )
   }
@@ -56,19 +56,19 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://swap-n3.cncchainpro.com/#/swap?inputCurrency=${token0Address}`
+    return `https://swap-n5.cncchainpro.com/#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap-n3.cncchainpro.com/#/swap?inputCurrency=${token0Address === '0x276558eD66E6a7D0A817e69eB44B5BC06B560a52' ? 'CNC' : token0Address
-      }&outputCurrency=${token1Address === '0x276558eD66E6a7D0A817e69eB44B5BC06B560a52' ? 'CNC' : token1Address}`
+    return `https://swap-n5.cncchainpro.com/#/swap?inputCurrency=${token0Address === '0xb08e436185a51bf9022dda915b9f409ea9b3b348' ? 'CNC' : token0Address
+      }&outputCurrency=${token1Address === '0xb08e436185a51bf9022dda915b9f409ea9b3b348' ? 'CNC' : token1Address}`
   }
 }
 
 export function getMiningPoolLink(token0Address) {
-  return `https://swap-n3.cncchainpro.com/#/uni/ETH/${token0Address}`
+  return `https://swap-n5.cncchainpro.com/#/uni/ETH/${token0Address}`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://swap-n3.cncchainpro.com/#/uni'
+  let baseUniswapUrl = 'https://swap-n5.cncchainpro.com/#/uni'
   if (!linkVariable) {
     return baseUniswapUrl
   }
