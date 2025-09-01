@@ -9,26 +9,22 @@ export function useColor(tokenAddress, token) {
   const [color, setColor] = useState('#2172E5')
   if (tokenAddress) {
 
-    // const path = `https://faucet.cncchainpro.com/images/tokens/${isAddress(
+    // const path = `https://faucet.avcchain.com/images/tokens/${isAddress(
     //   tokenAddress
     // )}.png`
     let path = ''
     switch (tokenAddress) {
       // USDT
-      case '0x7cfead1aa064062e29676a8e3d642e2e76c10ba4':
-        path = 'https://wallet-n5.cncchainpro.com/image/USDT.png';
+      case '0x5bc1ef7578a63764a342471a215058e6fef50d24':
+        path = 'https://wallet.avcchain.com/image/USDT.png';
         break;
-      // TWA
-      case '0xd3485d29f5e23c04b7a086b36b6ebe7e2f921049':
-        path = 'https://wallet-n5.cncchainpro.com/image/TWA.png';
+      // HKDT
+      case '0x81a85857a544482d9376e37583b9e51cca062d9c':
+        path = 'https://wallet.avcchain.com/image/HKDT.png';
         break;
-      // TWT
-      case '0xd7041fc9c90e734ae32bf7dafaa55e8d39115354':
-        path = 'https://wallet-n5.cncchainpro.com/image/TWT.png';
-        break;
-      // TDAO
-      case '0x854cdaa7af235ba964e986f67c8cd7ab2db269eb':
-        path = 'https://wallet-n5.cncchainpro.com/image/TDAO.png';
+      // TBNB
+      case '0x0c15919b45f1e437587fe9d5f556754df84e5678':
+        path = 'https://wallet.avcchain.com/image/BNB.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);

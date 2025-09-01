@@ -40,15 +40,15 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://swap-n5.cncchainpro.com/#/` +
+      `https://swap.avcchain.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xb08e436185a51bf9022dda915b9f409ea9b3b348' ? 'CNC' : token0Address}/${'CNC'}`
+      `/v2/${token0Address === '0xd1c9205b87f521baa1f721db2c777e09097226d7' ? 'AVC' : token0Address}/${'AVC'}`
     )
   } else {
     return (
-      `https://swap-n5.cncchainpro.com/#/` +
+      `https://swap.avcchain.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xb08e436185a51bf9022dda915b9f409ea9b3b348' ? 'CNC' : token0Address}/${token1Address === '0xb08e436185a51bf9022dda915b9f409ea9b3b348' ? 'CNC' : token1Address
+      `/v2/${token0Address === '0xd1c9205b87f521baa1f721db2c777e09097226d7' ? 'AVC' : token0Address}/${token1Address === '0xd1c9205b87f521baa1f721db2c777e09097226d7' ? 'AVC' : token1Address
       }`
     )
   }
@@ -56,19 +56,19 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://swap-n5.cncchainpro.com/#/swap?inputCurrency=${token0Address}`
+    return `https://swap.avcchain.com/#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap-n5.cncchainpro.com/#/swap?inputCurrency=${token0Address === '0xb08e436185a51bf9022dda915b9f409ea9b3b348' ? 'CNC' : token0Address
-      }&outputCurrency=${token1Address === '0xb08e436185a51bf9022dda915b9f409ea9b3b348' ? 'CNC' : token1Address}`
+    return `https://swap.avcchain.com/#/swap?inputCurrency=${token0Address === '0xd1c9205b87f521baa1f721db2c777e09097226d7' ? 'AVC' : token0Address
+      }&outputCurrency=${token1Address === '0xd1c9205b87f521baa1f721db2c777e09097226d7' ? 'AVC' : token1Address}`
   }
 }
 
 export function getMiningPoolLink(token0Address) {
-  return `https://swap-n5.cncchainpro.com/#/uni/ETH/${token0Address}`
+  return `https://swap.avcchain.com/#/uni/ETH/${token0Address}`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://swap-n5.cncchainpro.com/#/uni'
+  let baseUniswapUrl = 'https://swap.avcchain.com/#/uni'
   if (!linkVariable) {
     return baseUniswapUrl
   }
@@ -306,10 +306,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `https://cncchainpro.com/tx/${tx}/`,
-  showAddress: (address) => `https://www.cncchainpro.com/address/${address}/`,
-  showToken: (address) => `https://www.cncchainpro.com/token/${address}/`,
-  showBlock: (block) => `https://cncchainpro.com/block/${block}/`,
+  showTransaction: (tx) => `https://avcchain.com/tx/${tx}/`,
+  showAddress: (address) => `https://www.avcchain.com/address/${address}/`,
+  showToken: (address) => `https://www.avcchain.com/token/${address}/`,
+  showBlock: (block) => `https://avcchain.com/block/${block}/`,
 }
 
 export const formatTime = (unix) => {
