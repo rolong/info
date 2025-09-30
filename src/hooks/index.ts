@@ -9,34 +9,22 @@ export function useColor(tokenAddress, token) {
   const [color, setColor] = useState('#2172E5')
   if (tokenAddress) {
 
-    // const path = `https://faucet.cncchainpro.com/images/tokens/${isAddress(
+    // const path = `https://faucet.rbatscan.com/images/tokens/${isAddress(
     //   tokenAddress
     // )}.png`
     let path = ''
     switch (tokenAddress) {
       // USDT
-      case '0x06cdc6505580f2894cd89ec3b11df37f78ac9d4f':
-        path = 'https://wallet-n8.cncchainpro.com/image/USDT.png';
+      case '0x46ec2470f722fdd23bddb3ed2774e0b66efa8bc0':
+        path = 'https://wallet.rbatscan.com/image/USDT.png';
         break;
-      // BOPC
-      case '0x8fec64b18576ecf73fc80a3d2f0a7118afa00133':
-        path = 'https://wallet-n8.cncchainpro.com/image/BOPC.png';
+      // BAE
+      case '0x28f1e198cc14e5cf7315ffced6c2fcbf8020666a':
+        path = 'https://wallet.rbatscan.com/image/BAE.png';
         break;
-      // GOD
-      case '0xc62a2df7880956086b18669d088c286e94d2cf03':
-        path = 'https://wallet-n8.cncchainpro.com/image/GOD.png';
-        break;
-      // OPCB
-      case '0x1ae44fc7da864ec47474e537d9c13b85d4b78330':
-        path = 'https://wallet-n8.cncchainpro.com/image/OPCB.png';
-        break;
-      // OPE
-      case '0xf449e992bac913def486108ad27c50bfc8e26c12':
-        path = 'https://wallet-n8.cncchainpro.com/image/OPE.png';
-        break;
-      // HASH
-      case '0xd641baa8ac78c29267b80a053b7a4c4ff152ce7a':
-        path = 'https://wallet-n8.cncchainpro.com/image/HASH.png';
+      // RUSD
+      case '0x800b5f2d26c2dfe4d91405148507556f77fdbeba':
+        path = 'https://wallet.rbatscan.com/image/RUSD.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);

@@ -57,7 +57,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0x2171477d3c324dcced1bcc0cb5e3392f0708f302') {
+  if (address?.toLowerCase() === '0xcc24b6ca44679b453b9710dbf1b47801f3fd11af') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -76,28 +76,16 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
 
   switch (address) {
     // USDT
-    case '0x06cdc6505580f2894cd89ec3b11df37f78ac9d4f':
-      path = 'https://wallet-n8.cncchainpro.com/image/USDT.png';
+    case '0x46ec2470f722fdd23bddb3ed2774e0b66efa8bc0':
+      path = 'https://wallet.rbatscan.com/image/USDT.png';
       break;
-    // BOPC
-    case '0x8fec64b18576ecf73fc80a3d2f0a7118afa00133':
-      path = 'https://wallet-n8.cncchainpro.com/image/BOPC.png';
+    // BAE
+    case '0x28f1e198cc14e5cf7315ffced6c2fcbf8020666a':
+      path = 'https://wallet.rbatscan.com/image/BAE.png';
       break;
-    // GOD
-    case '0xc62a2df7880956086b18669d088c286e94d2cf03':
-      path = 'https://wallet-n8.cncchainpro.com/image/GOD.png';
-      break;
-    // OPCB
-    case '0x1ae44fc7da864ec47474e537d9c13b85d4b78330':
-      path = 'https://wallet-n8.cncchainpro.com/image/OPCB.png';
-      break;
-    // OPE
-    case '0xf449e992bac913def486108ad27c50bfc8e26c12':
-      path = 'https://wallet-n8.cncchainpro.com/image/OPE.png';
-      break;
-    // HASH
-    case '0xd641baa8ac78c29267b80a053b7a4c4ff152ce7a':
-      path = 'https://wallet-n8.cncchainpro.com/image/HASH.png';
+    // RUSD
+    case '0x800b5f2d26c2dfe4d91405148507556f77fdbeba':
+      path = 'https://wallet.rbatscan.com/image/RUSD.png';
       break;
     default:
       console.log('address', address);
