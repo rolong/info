@@ -15,20 +15,28 @@ export function useColor(tokenAddress, token) {
     let path = ''
     switch (tokenAddress) {
       // USDT
-      case '0x7cfead1aa064062e29676a8e3d642e2e76c10ba4':
-        path = 'https://wallet-n5.cncchainpro.com/image/USDT.png';
+      case '0x06cdc6505580f2894cd89ec3b11df37f78ac9d4f':
+        path = 'https://wallet-n8.cncchainpro.com/image/USDT.png';
         break;
-      // TWA
-      case '0xd3485d29f5e23c04b7a086b36b6ebe7e2f921049':
-        path = 'https://wallet-n5.cncchainpro.com/image/TWA.png';
+      // BOPC
+      case '0x8fec64b18576ecf73fc80a3d2f0a7118afa00133':
+        path = 'https://wallet-n8.cncchainpro.com/image/BOPC.png';
         break;
-      // TWT
-      case '0xd7041fc9c90e734ae32bf7dafaa55e8d39115354':
-        path = 'https://wallet-n5.cncchainpro.com/image/TWT.png';
+      // GOD
+      case '0xc62a2df7880956086b18669d088c286e94d2cf03':
+        path = 'https://wallet-n8.cncchainpro.com/image/GOD.png';
         break;
-      // TDAO
-      case '0x854cdaa7af235ba964e986f67c8cd7ab2db269eb':
-        path = 'https://wallet-n5.cncchainpro.com/image/TDAO.png';
+      // OPCB
+      case '0x1ae44fc7da864ec47474e537d9c13b85d4b78330':
+        path = 'https://wallet-n8.cncchainpro.com/image/OPCB.png';
+        break;
+      // OPE
+      case '0xf449e992bac913def486108ad27c50bfc8e26c12':
+        path = 'https://wallet-n8.cncchainpro.com/image/OPE.png';
+        break;
+      // HASH
+      case '0xd641baa8ac78c29267b80a053b7a4c4ff152ce7a':
+        path = 'https://wallet-n8.cncchainpro.com/image/HASH.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);
