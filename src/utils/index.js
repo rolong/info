@@ -40,15 +40,15 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://swap-n9.cncchainpro.com/#/` +
+      `https://swap.latoureco.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xc1e1c0f7722b304006d5ded74b5508bd3ff1f48b' ? 'CNC' : token0Address}/${'CNC'}`
+      `/v2/${token0Address === '0x1d25ef4a579b2bc9d5e93094d2fe94dcbe63c233' ? 'CNC' : token0Address}/${'CNC'}`
     )
   } else {
     return (
-      `https://swap-n9.cncchainpro.com/#/` +
+      `https://swap.latoureco.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xc1e1c0f7722b304006d5ded74b5508bd3ff1f48b' ? 'CNC' : token0Address}/${token1Address === '0xc1e1c0f7722b304006d5ded74b5508bd3ff1f48b' ? 'CNC' : token1Address
+      `/v2/${token0Address === '0x1d25ef4a579b2bc9d5e93094d2fe94dcbe63c233' ? 'CNC' : token0Address}/${token1Address === '0x1d25ef4a579b2bc9d5e93094d2fe94dcbe63c233' ? 'CNC' : token1Address
       }`
     )
   }
@@ -56,19 +56,19 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://swap-n9.cncchainpro.com/#/swap?inputCurrency=${token0Address}`
+    return `https://swap.latoureco.com/#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap-n9.cncchainpro.com/#/swap?inputCurrency=${token0Address === '0xc1e1c0f7722b304006d5ded74b5508bd3ff1f48b' ? 'CNC' : token0Address
-      }&outputCurrency=${token1Address === '0xc1e1c0f7722b304006d5ded74b5508bd3ff1f48b' ? 'CNC' : token1Address}`
+    return `https://swap.latoureco.com/#/swap?inputCurrency=${token0Address === '0x1d25ef4a579b2bc9d5e93094d2fe94dcbe63c233' ? 'CNC' : token0Address
+      }&outputCurrency=${token1Address === '0x1d25ef4a579b2bc9d5e93094d2fe94dcbe63c233' ? 'CNC' : token1Address}`
   }
 }
 
 export function getMiningPoolLink(token0Address) {
-  return `https://swap-n9.cncchainpro.com/#/uni/ETH/${token0Address}`
+  return `https://swap.latoureco.com/#/uni/ETH/${token0Address}`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://swap-n9.cncchainpro.com/#/uni'
+  let baseUniswapUrl = 'https://swap.latoureco.com/#/uni'
   if (!linkVariable) {
     return baseUniswapUrl
   }
