@@ -57,7 +57,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0x054f59e074e49fa4b858f4c2a65824be5ea82a00') {
+  if (address?.toLowerCase() === '0x26246de7420e8be3a865886e9c5f0c962b302c96') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -76,20 +76,20 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
 
   switch (address) {
     // USDT
-    case '0x86711599d5eb968b3c67433e65783d18eff4476e':
-      path = 'https://wallet-n3.crcchainpro.com/image/USDT.png';
+    case '0x88d804f6c3e5a5890b5968839d2c983995f2a405':
+      path = 'https://wallet-n5.crcchainpro.com/image/USDT.png';
       break;
-    // CRB
-    case '0x36edbc71a6416ba36b9b16bbbaf96cd80783fc9d':
-      path = 'https://wallet-n3.crcchainpro.com/image/CRB.png';
+    // CRA
+    case '0x2666d224e09fb5f9b7d84b1f164ee0021ebc2e2a':
+      path = 'https://wallet-n5.crcchainpro.com/image/CRA.png';
       break;
-    // USDB
-    case '0x9ae1583096f48effefad417bdd9ca9104d87adf2':
-      path = 'https://wallet-n3.crcchainpro.com/image/USDB.png';
+    // CRX
+    case '0xcf21d9412839190d2333dd21d2e645e9961e8ce5':
+      path = 'https://wallet-n5.crcchainpro.com/image/CRX.png';
       break;
-    // SHD
-    case '0xb9ac113c402a7c2fec9baba7ab799b825b2fd8e7':
-      path = 'https://wallet-n3.crcchainpro.com/image/SHD.png';
+    // CDAO
+    case '0xf405e09803301cd496c328f1f960a4e3d5447541':
+      path = 'https://wallet-n5.crcchainpro.com/image/CDAO.png';
       break;
     default:
       console.log('address', address);

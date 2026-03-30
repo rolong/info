@@ -39,10 +39,10 @@ function formatPricesForEarlyTimestamps(position): Position {
       position.token1PriceUSD = 1
     }
     // WETH price
-    if (position.pair?.token0.id === '0x054f59e074e49fa4b858f4c2a65824be5ea82a00') {
+    if (position.pair?.token0.id === '0x26246de7420e8be3a865886e9c5f0c962b302c96') {
       position.token0PriceUSD = 203
     }
-    if (position.pair?.token1.id === '0x054f59e074e49fa4b858f4c2a65824be5ea82a00') {
+    if (position.pair?.token1.id === '0x26246de7420e8be3a865886e9c5f0c962b302c96') {
       position.token1PriceUSD = 203
     }
   }

@@ -42,13 +42,13 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
     return (
       `https://swap.crcchainpro.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x054f59e074e49fa4b858f4c2a65824be5ea82a00' ? 'CRC' : token0Address}/${'CRC'}`
+      `/v2/${token0Address === '0x26246de7420e8be3a865886e9c5f0c962b302c96' ? 'CRC' : token0Address}/${'CRC'}`
     )
   } else {
     return (
       `https://swap.crcchainpro.com/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0x054f59e074e49fa4b858f4c2a65824be5ea82a00' ? 'CRC' : token0Address}/${token1Address === '0x054f59e074e49fa4b858f4c2a65824be5ea82a00' ? 'CRC' : token1Address
+      `/v2/${token0Address === '0x26246de7420e8be3a865886e9c5f0c962b302c96' ? 'CRC' : token0Address}/${token1Address === '0x26246de7420e8be3a865886e9c5f0c962b302c96' ? 'CRC' : token1Address
       }`
     )
   }
@@ -58,17 +58,17 @@ export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
     return `https://swap.crcchainpro.com/#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://swap.crcchainpro.com/#/swap?inputCurrency=${token0Address === '0x054f59e074e49fa4b858f4c2a65824be5ea82a00' ? 'CRC' : token0Address
-      }&outputCurrency=${token1Address === '0x054f59e074e49fa4b858f4c2a65824be5ea82a00' ? 'CRC' : token1Address}`
+    return `https://swap.crcchainpro.com/#/swap?inputCurrency=${token0Address === '0x26246de7420e8be3a865886e9c5f0c962b302c96' ? 'CRC' : token0Address
+      }&outputCurrency=${token1Address === '0x26246de7420e8be3a865886e9c5f0c962b302c96' ? 'CRC' : token1Address}`
   }
 }
 
 export function getMiningPoolLink(token0Address) {
-  return `https://swap-n3.crcchainpro.com/#/uni/ETH/${token0Address}`
+  return `https://swap-n5.crcchainpro.com/#/uni/ETH/${token0Address}`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://swap-n3.crcchainpro.com/#/uni'
+  let baseUniswapUrl = 'https://swap-n5.crcchainpro.com/#/uni'
   if (!linkVariable) {
     return baseUniswapUrl
   }
