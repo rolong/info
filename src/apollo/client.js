@@ -36,7 +36,7 @@ export const stakingClient = new ApolloClient({
 
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://info-n9.crcchainpro.com/subgraphs/name/blocklytics/ethereum-blocks',
+    uri: 'https://info-n3.crcchainpro.com/subgraphs/name/blocklytics/ethereum-blocks',
   }),
   cache: new InMemoryCache(),
 })

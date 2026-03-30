@@ -57,7 +57,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0x276558ed66e6a7d0a817e69eb44b5bc06b560a52') {
+  if (address?.toLowerCase() === '0x054f59e074e49fa4b858f4c2a65824be5ea82a00') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -76,12 +76,20 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
 
   switch (address) {
     // USDT
-    case '0xa165632e89d47cb1bcf4b3c0a4afbde6c1d177bf':
+    case '0x86711599d5eb968b3c67433e65783d18eff4476e':
       path = 'https://wallet-n3.crcchainpro.com/image/USDT.png';
       break;
-    // DRWA
-    case '0x4c9d6ab3a403f6814879fd1718b02d81594596e7':
-      path = 'https://wallet-n3.crcchainpro.com/image/D-RWA.png';
+    // CRB
+    case '0x36edbc71a6416ba36b9b16bbbaf96cd80783fc9d':
+      path = 'https://wallet-n3.crcchainpro.com/image/CRB.png';
+      break;
+    // USDB
+    case '0x9ae1583096f48effefad417bdd9ca9104d87adf2':
+      path = 'https://wallet-n3.crcchainpro.com/image/USDB.png';
+      break;
+    // SHD
+    case '0xb9ac113c402a7c2fec9baba7ab799b825b2fd8e7':
+      path = 'https://wallet-n3.crcchainpro.com/image/SHD.png';
       break;
     default:
       console.log('address', address);
