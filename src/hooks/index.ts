@@ -19,11 +19,11 @@ export function useColor(tokenAddress, token) {
         path = 'https://wallet.latoureco.com/image/USDT.png';
         break;
       // LAT
-      case '0x2b14a5698c9897e43614c7ec5c8f6958c49822ef':
+      case '0x594b7a5527e32392f47bd43c946c2ee65bd19c5a':
         path = 'https://wallet.latoureco.com/image/LAT.png';
         break;
       // LET
-      case '0xa63a5809f3d4342d1a02f96b4950bd2f77469276':
+      case '0x51f6e39d81d6a87ed0410506fc22831379492433':
         path = 'https://wallet.latoureco.com/image/LET.png';
         break;
       default:
