@@ -15,16 +15,12 @@ export function useColor(tokenAddress, token) {
     let path = ''
     switch (tokenAddress) {
       // USDT
-      case '0x01eda43b6f88fb93d48441758b32d26e501f57e0':
-        path = 'https://wallet.latoureco.com/image/USDT.png';
+      case '0xcd1a1d1df29d5214726ed3860b6b44e5c9814699':
+        path = 'https://wallet-nx-galaxy.cncchainpro.com/image/USDT.png';
         break;
-      // LAT
-      case '0x594b7a5527e32392f47bd43c946c2ee65bd19c5a':
-        path = 'https://wallet.latoureco.com/image/LAT.png';
-        break;
-      // LET
-      case '0x51f6e39d81d6a87ed0410506fc22831379492433':
-        path = 'https://wallet.latoureco.com/image/LET.png';
+      // GAX
+      case '0xc18947B3A393Ba1A85D617bf78F301538148E8aA':
+        path = 'https://wallet-nx-galaxy.cncchainpro.com/image/GAX.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);
