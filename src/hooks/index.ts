@@ -15,12 +15,8 @@ export function useColor(tokenAddress, token) {
     let path = ''
     switch (tokenAddress) {
       // USDT
-      case '0xcd1a1d1df29d5214726ed3860b6b44e5c9814699':
-        path = 'https://wallet-nx-galaxy.cncchainpro.com/image/USDT.png';
-        break;
-      // GAX
-      case '0xc18947B3A393Ba1A85D617bf78F301538148E8aA':
-        path = 'https://wallet-nx-galaxy.cncchainpro.com/image/GAX.png';
+      case '0xcab7b7c7d35328c11640c6af64abcccf7eeebe53':
+        path = 'https://wallet-nx-seeralpha.cncchainpro.com/image/USDT.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);
