@@ -57,7 +57,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0x1d25ef4a579b2bc9d5e93094d2fe94dcbe63c233') {
+  if (address?.toLowerCase() === '0xe174d6cf7b37dcc5a3aa83fe75eff2b33149aef0') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -76,16 +76,12 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
 
   switch (address) {
     // USDT
-    case '0x01eda43b6f88fb93d48441758b32d26e501f57e0':
-      path = 'https://wallet.latoureco.com/image/USDT.png';
+    case '0xf54cc0f6ce272125c39c45a8141b84989a8765f4':
+      path = 'https://wallet.truthoraclepro.com/image/USDT.png';
       break;
     // LAT
-    case '0x594b7a5527e32392f47bd43c946c2ee65bd19c5a':
-      path = 'https://wallet.latoureco.com/image/LAT.png';
-      break;
-    // LET
-    case '0x51f6e39d81d6a87ed0410506fc22831379492433':
-      path = 'https://wallet.latoureco.com/image/LET.png';
+    case '0x0c720a3d1ab25b19c132ba02c74a5d145d7ccdda':
+      path = 'https://wallet.truthoraclepro.com/image/TOT.png';
       break;
     default:
       console.log('address', address);

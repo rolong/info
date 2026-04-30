@@ -15,16 +15,12 @@ export function useColor(tokenAddress, token) {
     let path = ''
     switch (tokenAddress) {
       // USDT
-      case '0x01eda43b6f88fb93d48441758b32d26e501f57e0':
-        path = 'https://wallet.latoureco.com/image/USDT.png';
+      case '0xf54cc0f6ce272125c39c45a8141b84989a8765f4':
+        path = 'https://wallet.truthoraclepro.com/image/USDT.png';
         break;
       // LAT
-      case '0x594b7a5527e32392f47bd43c946c2ee65bd19c5a':
-        path = 'https://wallet.latoureco.com/image/LAT.png';
-        break;
-      // LET
-      case '0x51f6e39d81d6a87ed0410506fc22831379492433':
-        path = 'https://wallet.latoureco.com/image/LET.png';
+      case '0x0c720a3d1ab25b19c132ba02c74a5d145d7ccdda':
+        path = 'https://wallet.truthoraclepro.com/image/TOT.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);
