@@ -1,4 +1,4 @@
-export const FACTORY_ADDRESS = '0x7ae0f3c63ca8f3054bd1ca10df9a34d26d07ab7a'
+export const FACTORY_ADDRESS = '0xa7570e1d85d347b00eeda193743d8b8663c53c62'
 
 export const BUNDLE_ID = '1'
 
