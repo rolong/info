@@ -57,7 +57,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
   }
 
-  if (address?.toLowerCase() === '0x637ae27d97efab01704d84357e1b2b61718c3479') {
+  if (address?.toLowerCase() === '0xbfb7f520772feb3216c953821365f648c8f66c2b') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -76,12 +76,8 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
 
   switch (address) {
     // USDT
-    case '0xcd1a1d1df29d5214726ed3860b6b44e5c9814699':
-      path = 'https://wallet-nx-galaxy.cncchainpro.com/image/USDT.png';
-      break;
-    // GAX
-    case '0xc18947B3A393Ba1A85D617bf78F301538148E8aA':
-      path = 'https://wallet-nx-galaxy.cncchainpro.com/image/GAX.png';
+    case '0x7ea6474c89de99d186f6559c06a15681197ca48f':
+      path = 'https://wallet-nx-discoveryfield.cncchainpro.com/image/USDT.png';
       break;
     default:
       console.log('address', address);
