@@ -15,20 +15,12 @@ export function useColor(tokenAddress, token) {
     let path = ''
     switch (tokenAddress) {
       // USDT
-      case '0x86711599d5eb968b3c67433e65783d18eff4476e':
-        path = 'https://wallet-n3.crcchainpro.com/image/USDT.png';
+      case '0xbe9b0ec9c93222251940b3c2d84c7bbb8fe08144':
+        path = 'https://wallet-n168.crcchainpro.com/image/USDT.png';
         break;
-      // CRB
-      case '0x36edbc71a6416ba36b9b16bbbaf96cd80783fc9d':
-        path = 'https://wallet-n3.crcchainpro.com/image/CRB.png';
-        break;
-      // USDB
-      case '0x9ae1583096f48effefad417bdd9ca9104d87adf2':
-        path = 'https://wallet-n3.crcchainpro.com/image/USDB.png';
-        break;
-      // SHD
-      case '0xb9ac113c402a7c2fec9baba7ab799b825b2fd8e7':
-        path = 'https://wallet-n3.crcchainpro.com/image/SHD.png';
+      // CRA
+      case '0x2666d224e09fb5f9b7d84b1f164ee0021ebc2e2a':
+        path = 'https://wallet-n168.crcchainpro.com/image/CRA.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);
