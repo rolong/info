@@ -47,7 +47,7 @@ export default function GlobalStats() {
               }}
               style={{ position: 'relative' }}
             >
-              CNC Price: <Medium>{formattedEthPrice}</Medium>
+              CSC Price: <Medium>{formattedEthPrice}</Medium>
               {showPriceCard && <UniPrice />}
             </TYPE.main>
           )}

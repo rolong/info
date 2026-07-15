@@ -9,18 +9,14 @@ export function useColor(tokenAddress, token) {
   const [color, setColor] = useState('#2172E5')
   if (tokenAddress) {
 
-    // const path = `https://faucet.cncchainpro.com/images/tokens/${isAddress(
+    // const path = `https://faucet.cscscan.com/images/tokens/${isAddress(
     //   tokenAddress
     // )}.png`
     let path = ''
     switch (tokenAddress) {
       // USDT
-      case '0xcd1a1d1df29d5214726ed3860b6b44e5c9814699':
-        path = 'https://wallet-nx-galaxy.cncchainpro.com/image/USDT.png';
-        break;
-      // GAX
-      case '0xc18947B3A393Ba1A85D617bf78F301538148E8aA':
-        path = 'https://wallet-nx-galaxy.cncchainpro.com/image/GAX.png';
+      case '0xd6c330ad0ab9d960878c8d9b7c6c5321b99e9d23':
+        path = 'https://wallet.cscscan.com/image/USDT.png';
         break;
       default:
         console.log('tokenAddress', tokenAddress);
